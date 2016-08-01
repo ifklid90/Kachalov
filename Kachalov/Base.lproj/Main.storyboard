@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Laq-z3-cwi">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="egr65-webfont.ttf">
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+            <string>EngraversGothicBold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,19 +45,108 @@
         <!--Root View Controller-->
         <scene sceneID="Su0-Pe-dp8">
             <objects>
-                <tableViewController id="ToL-05-67z" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="lPt-FN-xhr">
+                <tableViewController id="ToL-05-67z" customClass="SmallAfficheTablewViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" allowsSelection="NO" rowHeight="148" sectionHeaderHeight="28" sectionFooterHeight="28" id="lPt-FN-xhr">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7Bz-Uq-xsQ">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SmallAfficheTableViewCell" rowHeight="148" id="7Bz-Uq-xsQ" customClass="SmallAfficheCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="148"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Bz-Uq-xsQ" id="wEs-yM-yaF">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="147.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="91" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-fm-6sB">
+                                            <rect key="frame" x="0.0" y="57" width="90" height="17"/>
+                                            <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="Premiere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5Re-vy-0uO">
+                                            <rect key="frame" x="120" y="0.0" width="360" height="17"/>
+                                            <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="15"/>
+                                            <color key="textColor" red="1" green="0.007192706355" blue="0.094126267870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mE1-rX-QLA">
+                                            <rect key="frame" x="120" y="17" width="360" height="91"/>
+                                            <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIg-Gt-1zC">
+                                            <rect key="frame" x="120" y="108.5" width="360" height="22"/>
+                                            <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Age Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="83.5" translatesAutoresizingMaskIntoConstraints="NO" id="C4i-g7-nKb">
+                                            <rect key="frame" x="532" y="65" width="60" height="17"/>
+                                            <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8H-Bz-SQH">
+                                            <rect key="frame" x="120" y="130.5" width="360" height="17"/>
+                                            <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaV-Oc-ktb" userLabel="Date/Day Separator">
+                                            <rect key="frame" x="0.0" y="74" width="10" height="0.0"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" id="Ku9-Hh-oDn"/>
+                                                <constraint firstAttribute="width" constant="10" id="jIA-zi-qTZ"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="74" translatesAutoresizingMaskIntoConstraints="NO" id="AqG-lP-N8x">
+                                            <rect key="frame" x="0.0" y="74" width="90" height="17"/>
+                                            <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="c8H-Bz-SQH" firstAttribute="top" secondItem="cIg-Gt-1zC" secondAttribute="bottom" id="1Ll-bw-uiL"/>
+                                        <constraint firstItem="AqG-lP-N8x" firstAttribute="leading" secondItem="wEs-yM-yaF" secondAttribute="leading" id="26v-K5-vUH"/>
+                                        <constraint firstItem="TaV-Oc-ktb" firstAttribute="centerY" secondItem="wEs-yM-yaF" secondAttribute="centerY" id="2E2-QY-Bym"/>
+                                        <constraint firstItem="5Re-vy-0uO" firstAttribute="centerX" secondItem="wEs-yM-yaF" secondAttribute="centerX" id="8SL-dC-3bj"/>
+                                        <constraint firstItem="C4i-g7-nKb" firstAttribute="width" secondItem="wEs-yM-yaF" secondAttribute="width" multiplier="0.1" id="BsP-dU-y6n"/>
+                                        <constraint firstItem="5Re-vy-0uO" firstAttribute="top" secondItem="wEs-yM-yaF" secondAttribute="top" id="CHS-z7-aqn"/>
+                                        <constraint firstItem="5Re-vy-0uO" firstAttribute="width" secondItem="wEs-yM-yaF" secondAttribute="width" multiplier="0.6" id="RgC-gR-FaK"/>
+                                        <constraint firstItem="mE1-rX-QLA" firstAttribute="width" secondItem="wEs-yM-yaF" secondAttribute="width" multiplier="0.6" id="Uar-WC-SRU"/>
+                                        <constraint firstItem="cIg-Gt-1zC" firstAttribute="width" secondItem="wEs-yM-yaF" secondAttribute="width" multiplier="0.6" id="XLF-fO-KaT"/>
+                                        <constraint firstItem="mE1-rX-QLA" firstAttribute="top" secondItem="5Re-vy-0uO" secondAttribute="bottom" id="aMp-gY-Nu4"/>
+                                        <constraint firstItem="mE1-rX-QLA" firstAttribute="centerX" secondItem="wEs-yM-yaF" secondAttribute="centerX" id="aQA-Hg-M7N"/>
+                                        <constraint firstItem="AqG-lP-N8x" firstAttribute="top" secondItem="TaV-Oc-ktb" secondAttribute="bottom" id="ab9-D3-ZYU"/>
+                                        <constraint firstItem="c8H-Bz-SQH" firstAttribute="centerX" secondItem="wEs-yM-yaF" secondAttribute="centerX" id="ark-SK-8IN"/>
+                                        <constraint firstItem="TaV-Oc-ktb" firstAttribute="leading" secondItem="wEs-yM-yaF" secondAttribute="leading" id="bVh-cX-MzQ"/>
+                                        <constraint firstItem="C4i-g7-nKb" firstAttribute="centerY" secondItem="wEs-yM-yaF" secondAttribute="centerY" id="g9E-ZY-bcS"/>
+                                        <constraint firstItem="ZcS-fm-6sB" firstAttribute="leading" secondItem="wEs-yM-yaF" secondAttribute="leading" id="gZr-7L-46i"/>
+                                        <constraint firstItem="c8H-Bz-SQH" firstAttribute="width" secondItem="wEs-yM-yaF" secondAttribute="width" multiplier="0.6" id="ghd-vJ-plO"/>
+                                        <constraint firstItem="cIg-Gt-1zC" firstAttribute="top" secondItem="mE1-rX-QLA" secondAttribute="bottom" id="hkh-TC-zTD"/>
+                                        <constraint firstItem="AqG-lP-N8x" firstAttribute="width" secondItem="ZcS-fm-6sB" secondAttribute="width" id="k1f-13-oA5"/>
+                                        <constraint firstAttribute="bottom" secondItem="c8H-Bz-SQH" secondAttribute="bottom" id="lzH-oY-Udz"/>
+                                        <constraint firstItem="ZcS-fm-6sB" firstAttribute="width" secondItem="wEs-yM-yaF" secondAttribute="width" multiplier="0.15" id="o2h-bg-AOY"/>
+                                        <constraint firstAttribute="trailing" secondItem="C4i-g7-nKb" secondAttribute="trailing" constant="8" id="oiX-yR-ev7"/>
+                                        <constraint firstItem="TaV-Oc-ktb" firstAttribute="top" secondItem="ZcS-fm-6sB" secondAttribute="bottom" id="t33-TW-anr"/>
+                                        <constraint firstItem="cIg-Gt-1zC" firstAttribute="centerX" secondItem="wEs-yM-yaF" secondAttribute="centerX" id="u22-jR-IlM"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ageRatingLabel" destination="C4i-g7-nKb" id="X7c-09-J0Y"/>
+                                    <outlet property="authorTextLabel" destination="mE1-rX-QLA" id="WGh-CL-dRt"/>
+                                    <outlet property="dateTextLabel" destination="ZcS-fm-6sB" id="sCD-BZ-gdG"/>
+                                    <outlet property="dayTextLabel" destination="AqG-lP-N8x" id="VUe-Tt-DCr"/>
+                                    <outlet property="genreTextLabel" destination="c8H-Bz-SQH" id="qx9-Wy-c2U"/>
+                                    <outlet property="nameTextLabel" destination="cIg-Gt-1zC" id="Vln-f3-75K"/>
+                                    <outlet property="premiereTextLabel" destination="5Re-vy-0uO" id="6Yi-dj-4ie"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -49,7 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ypd-YV-yOj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="1498"/>
+            <point key="canvasLocation" x="-25" y="1314"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="YcY-qh-FPb">
@@ -73,7 +182,7 @@
         <!--Item 1-->
         <scene sceneID="cc9-1N-TcF">
             <objects>
-                <viewController id="ngv-Di-JCj" sceneMemberID="viewController">
+                <viewController id="ngv-Di-JCj" customClass="SmallAfficheTablewViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OdV-JS-Um0"/>
                         <viewControllerLayoutGuide type="bottom" id="gac-xq-PSm"/>
@@ -81,47 +190,171 @@
                     <view key="view" contentMode="scaleToFill" id="oeV-XH-bjl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hfs-50-AmF">
+                                <rect key="frame" x="0.0" y="92" width="600" height="459"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SmallAfficheTableViewCell" rowHeight="148" id="P37-CU-Ufu" customClass="SmallAfficheCell">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="148"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="P37-CU-Ufu" id="RWj-4k-NNU">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="147.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="91" translatesAutoresizingMaskIntoConstraints="NO" id="7go-v7-hLk">
+                                                    <rect key="frame" x="0.0" y="57" width="90" height="17"/>
+                                                    <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="Premiere" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A11-Ra-ozk">
+                                                    <rect key="frame" x="120" y="0.0" width="360" height="17"/>
+                                                    <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="15"/>
+                                                    <color key="textColor" red="1" green="0.007192706355" blue="0.094126267870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Author" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DKq-ac-aqW">
+                                                    <rect key="frame" x="120" y="17" width="360" height="91"/>
+                                                    <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAa-vh-Nll">
+                                                    <rect key="frame" x="120" y="108.5" width="360" height="22"/>
+                                                    <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Age Rating" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="83.5" translatesAutoresizingMaskIntoConstraints="NO" id="CLl-ey-mEw">
+                                                    <rect key="frame" x="532" y="65" width="60" height="17"/>
+                                                    <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="14"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Genre" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0K6-fw-6fl">
+                                                    <rect key="frame" x="120" y="130.5" width="360" height="17"/>
+                                                    <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-Gy-q9R" userLabel="Date/Day Separator">
+                                                    <rect key="frame" x="0.0" y="74" width="10" height="0.0"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="10" id="OrW-hO-BTg"/>
+                                                        <constraint firstAttribute="height" id="wXE-xD-aVV"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" preferredMaxLayoutWidth="74" translatesAutoresizingMaskIntoConstraints="NO" id="Qmi-89-iwV">
+                                                    <rect key="frame" x="0.0" y="74" width="90" height="17"/>
+                                                    <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="YAa-vh-Nll" firstAttribute="width" secondItem="RWj-4k-NNU" secondAttribute="width" multiplier="0.6" id="50x-kv-VcM"/>
+                                                <constraint firstItem="Qmi-89-iwV" firstAttribute="width" secondItem="7go-v7-hLk" secondAttribute="width" id="636-V7-QId"/>
+                                                <constraint firstItem="ATo-Gy-q9R" firstAttribute="leading" secondItem="RWj-4k-NNU" secondAttribute="leading" id="6m4-GN-sPO"/>
+                                                <constraint firstItem="YAa-vh-Nll" firstAttribute="centerX" secondItem="RWj-4k-NNU" secondAttribute="centerX" id="9Gv-Dc-MkG"/>
+                                                <constraint firstItem="CLl-ey-mEw" firstAttribute="width" secondItem="RWj-4k-NNU" secondAttribute="width" multiplier="0.1" id="9s7-7z-hPA"/>
+                                                <constraint firstItem="A11-Ra-ozk" firstAttribute="width" secondItem="RWj-4k-NNU" secondAttribute="width" multiplier="0.6" id="EW4-uS-ddz"/>
+                                                <constraint firstAttribute="bottom" secondItem="0K6-fw-6fl" secondAttribute="bottom" id="NOb-c7-nYx"/>
+                                                <constraint firstItem="A11-Ra-ozk" firstAttribute="top" secondItem="RWj-4k-NNU" secondAttribute="top" id="OaS-6t-OQI"/>
+                                                <constraint firstItem="0K6-fw-6fl" firstAttribute="centerX" secondItem="RWj-4k-NNU" secondAttribute="centerX" id="PON-2x-96B"/>
+                                                <constraint firstItem="YAa-vh-Nll" firstAttribute="top" secondItem="DKq-ac-aqW" secondAttribute="bottom" id="Pc3-vk-DYe"/>
+                                                <constraint firstItem="Qmi-89-iwV" firstAttribute="leading" secondItem="RWj-4k-NNU" secondAttribute="leading" id="QlV-zQ-wcZ"/>
+                                                <constraint firstItem="0K6-fw-6fl" firstAttribute="top" secondItem="YAa-vh-Nll" secondAttribute="bottom" id="Qon-Ov-RrM"/>
+                                                <constraint firstItem="7go-v7-hLk" firstAttribute="width" secondItem="RWj-4k-NNU" secondAttribute="width" multiplier="0.15" id="Roc-N0-eFM"/>
+                                                <constraint firstAttribute="trailing" secondItem="CLl-ey-mEw" secondAttribute="trailing" constant="8" id="Xxb-Dg-qFJ"/>
+                                                <constraint firstItem="Qmi-89-iwV" firstAttribute="top" secondItem="ATo-Gy-q9R" secondAttribute="bottom" id="YnK-bB-RZh"/>
+                                                <constraint firstItem="7go-v7-hLk" firstAttribute="leading" secondItem="RWj-4k-NNU" secondAttribute="leading" id="eE0-Ph-pFS"/>
+                                                <constraint firstItem="DKq-ac-aqW" firstAttribute="width" secondItem="RWj-4k-NNU" secondAttribute="width" multiplier="0.6" id="gzE-9e-OWL"/>
+                                                <constraint firstItem="DKq-ac-aqW" firstAttribute="top" secondItem="A11-Ra-ozk" secondAttribute="bottom" id="hSV-Lp-5Kt"/>
+                                                <constraint firstItem="ATo-Gy-q9R" firstAttribute="top" secondItem="7go-v7-hLk" secondAttribute="bottom" id="isa-cm-AJT"/>
+                                                <constraint firstItem="0K6-fw-6fl" firstAttribute="width" secondItem="RWj-4k-NNU" secondAttribute="width" multiplier="0.6" id="kDn-Hb-4Mh"/>
+                                                <constraint firstItem="ATo-Gy-q9R" firstAttribute="centerY" secondItem="RWj-4k-NNU" secondAttribute="centerY" id="lHG-eR-Jnw"/>
+                                                <constraint firstItem="DKq-ac-aqW" firstAttribute="centerX" secondItem="RWj-4k-NNU" secondAttribute="centerX" id="mkl-wn-d11"/>
+                                                <constraint firstItem="A11-Ra-ozk" firstAttribute="centerX" secondItem="RWj-4k-NNU" secondAttribute="centerX" id="ona-Cq-VGu"/>
+                                                <constraint firstItem="CLl-ey-mEw" firstAttribute="centerY" secondItem="RWj-4k-NNU" secondAttribute="centerY" id="qBi-Kh-QkG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ageRatingLabel" destination="CLl-ey-mEw" id="FP4-NN-urr"/>
+                                            <outlet property="authorTextLabel" destination="DKq-ac-aqW" id="RZn-DK-4NP"/>
+                                            <outlet property="dateTextLabel" destination="7go-v7-hLk" id="OWN-zH-sIl"/>
+                                            <outlet property="dayTextLabel" destination="Qmi-89-iwV" id="jej-tR-BDD"/>
+                                            <outlet property="genreTextLabel" destination="0K6-fw-6fl" id="V3N-rb-fQj"/>
+                                            <outlet property="nameTextLabel" destination="YAa-vh-Nll" id="Dfe-k1-LWb"/>
+                                            <outlet property="premiereTextLabel" destination="A11-Ra-ozk" id="iGE-IM-eVL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ngv-Di-JCj" id="9Y9-GK-3o2"/>
+                                    <outlet property="delegate" destination="ngv-Di-JCj" id="GPV-VC-pvU"/>
+                                </connections>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dsh-os-vda">
+                                <rect key="frame" x="20" y="64" width="560" height="29"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hfs-50-AmF" firstAttribute="top" secondItem="dsh-os-vda" secondAttribute="bottom" id="DOX-PA-7MI"/>
+                            <constraint firstAttribute="trailing" secondItem="Hfs-50-AmF" secondAttribute="trailing" id="I4y-9W-Hbd"/>
+                            <constraint firstItem="Hfs-50-AmF" firstAttribute="leading" secondItem="oeV-XH-bjl" secondAttribute="leading" id="JhC-az-gWP"/>
+                            <constraint firstItem="dsh-os-vda" firstAttribute="leading" secondItem="oeV-XH-bjl" secondAttribute="leadingMargin" id="O7o-La-TpW"/>
+                            <constraint firstItem="dsh-os-vda" firstAttribute="top" secondItem="OdV-JS-Um0" secondAttribute="bottom" id="Zgl-2z-Bxh"/>
+                            <constraint firstItem="gac-xq-PSm" firstAttribute="top" secondItem="Hfs-50-AmF" secondAttribute="bottom" id="cDP-Kv-RBI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dsh-os-vda" secondAttribute="trailing" id="e0b-XY-CcL"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="L2l-Lr-qRm"/>
+                    <navigationItem key="navigationItem" id="Qm5-Yg-Qia"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTr-mN-p38" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="2339"/>
+            <point key="canvasLocation" x="-104" y="2219"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vmB-mx-oTt">
             <objects>
                 <tabBarController id="Laq-z3-cwi" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="KuW-L1-QE4">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="KuW-L1-QE4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ngv-Di-JCj" kind="relationship" relationship="viewControllers" id="7pc-EP-ldk"/>
-                        <segue destination="d70-sc-rSo" kind="relationship" relationship="viewControllers" id="Tbt-LD-bhu"/>
+                        <segue destination="yAc-2o-ddH" kind="relationship" relationship="viewControllers" id="W7m-ur-dIL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmm-48-IN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-580" y="2703"/>
+            <point key="canvasLocation" x="-1808" y="1599"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="EdM-qI-zEE">
             <objects>
                 <navigationController id="yAc-2o-ddH" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l7P-4n-Nvj">
+                    <tabBarItem key="tabBarItem" title="Item" id="hiJ-9A-SYx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="l7P-4n-Nvj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="ToL-05-67z" kind="relationship" relationship="rootViewController" id="zw1-83-ide"/>
+                        <segue destination="ToL-05-67z" kind="relationship" relationship="rootViewController" id="UUL-sV-akl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNn-uh-b2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-724" y="1495"/>
+            <point key="canvasLocation" x="-660" y="1421"/>
         </scene>
     </scenes>
 </document>

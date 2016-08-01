@@ -7,27 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06A6C5EFCD5CEA76CD2660D6 /* libPods-Kachalov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63F46A07497E0957306C438 /* libPods-Kachalov.a */; };
+		36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC425C50F8C6ECDD744E1 /* ViewController.m */; };
+		36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC6349703370454E22872 /* SmallAfficheParser.m */; };
+		36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */; };
+		36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */; };
+		CE7FF0FC1D401E2A00A1C1A3 /* egr65-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */; };
 		CEED5DAF1D14761000C94890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DAE1D14761000C94890 /* main.m */; };
 		CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DB11D14761000C94890 /* AppDelegate.m */; };
-		CEED5DB51D14761000C94890 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DB41D14761000C94890 /* ViewController.m */; };
 		CEED5DB81D14761000C94890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED5DB61D14761000C94890 /* Main.storyboard */; };
 		CEED5DBB1D14761000C94890 /* Kachalov.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DB91D14761000C94890 /* Kachalov.xcdatamodeld */; };
 		CEED5DBD1D14761000C94890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEED5DBC1D14761000C94890 /* Assets.xcassets */; };
 		CEED5DC01D14761000C94890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED5DBE1D14761000C94890 /* LaunchScreen.storyboard */; };
+		CEED5DCD1D242BEB00C94890 /* SmallAfficheTablewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DCC1D242BEB00C94890 /* SmallAfficheTablewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmallAfficheElement.m; path = Model/SmallAfficheElement.m; sourceTree = "<group>"; };
+		36EBC425C50F8C6ECDD744E1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36EBC6349703370454E22872 /* SmallAfficheParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheParser.m; sourceTree = "<group>"; };
+		36EBC84570C51E8951878040 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		36EBC9B11C628CDBE95DD21F /* SmallAfficheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallAfficheCell.h; sourceTree = "<group>"; };
+		36EBCD6D481A08A52CD3156E /* SmallAfficheParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallAfficheParser.h; sourceTree = "<group>"; };
+		36EBCED7674A36FEBBC80B6F /* SmallAfficheElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmallAfficheElement.h; path = Model/SmallAfficheElement.h; sourceTree = "<group>"; };
+		36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheCell.m; sourceTree = "<group>"; };
+		403930AE8D58B7A2F94B72EF /* Pods-Kachalov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.debug.xcconfig"; sourceTree = "<group>"; };
+		B63F46A07497E0957306C438 /* libPods-Kachalov.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kachalov.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "egr65-webfont.ttf"; path = "Resources/egr65-webfont.ttf"; sourceTree = "<group>"; };
 		CEED5DAA1D14761000C94890 /* Kachalov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kachalov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEED5DAE1D14761000C94890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEED5DB01D14761000C94890 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CEED5DB11D14761000C94890 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CEED5DB31D14761000C94890 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CEED5DB41D14761000C94890 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CEED5DB71D14761000C94890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEED5DBA1D14761000C94890 /* Kachalov.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kachalov.xcdatamodel; sourceTree = "<group>"; };
 		CEED5DBC1D14761000C94890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEED5DBF1D14761000C94890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEED5DC11D14761000C94890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEED5DCB1D242BEB00C94890 /* SmallAfficheTablewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallAfficheTablewViewController.h; sourceTree = "<group>"; };
+		CEED5DCC1D242BEB00C94890 /* SmallAfficheTablewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheTablewViewController.m; sourceTree = "<group>"; };
+		D29E9305751BBC57DCAE59C5 /* Pods-Kachalov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +53,92 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06A6C5EFCD5CEA76CD2660D6 /* libPods-Kachalov.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AE346EFBC4649F729726A9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				403930AE8D58B7A2F94B72EF /* Pods-Kachalov.debug.xcconfig */,
+				D29E9305751BBC57DCAE59C5 /* Pods-Kachalov.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36EBC00CB4BB8474432D8BC8 /* SmallAfficheVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEED5DCB1D242BEB00C94890 /* SmallAfficheTablewViewController.h */,
+				CEED5DCC1D242BEB00C94890 /* SmallAfficheTablewViewController.m */,
+			);
+			path = SmallAfficheVC;
+			sourceTree = "<group>";
+		};
+		36EBC7235AA256D28F53428F /* Entitys */ = {
+			isa = PBXGroup;
+			children = (
+				36EBCED7674A36FEBBC80B6F /* SmallAfficheElement.h */,
+				36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */,
+			);
+			name = Entitys;
+			sourceTree = "<group>";
+		};
+		36EBC7DCF0DD08B6D39E12E4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC84570C51E8951878040 /* ViewController.h */,
+				36EBC425C50F8C6ECDD744E1 /* ViewController.m */,
+				36EBC00CB4BB8474432D8BC8 /* SmallAfficheVC */,
+				36EBCFE465A090BFAAC7D566 /* Cells */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		36EBC830B47D0264B267A3EA /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC6349703370454E22872 /* SmallAfficheParser.m */,
+				36EBCD6D481A08A52CD3156E /* SmallAfficheParser.h */,
+			);
+			name = Parsers;
+			sourceTree = "<group>";
+		};
+		36EBCFE465A090BFAAC7D566 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */,
+				36EBC9B11C628CDBE95DD21F /* SmallAfficheCell.h */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		683A1AAEEDA606DCE66AD853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B63F46A07497E0957306C438 /* libPods-Kachalov.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE7FF0F81D401DBD00A1C1A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		CEED5DA11D14761000C94890 = {
 			isa = PBXGroup;
 			children = (
 				CEED5DAC1D14761000C94890 /* Kachalov */,
 				CEED5DAB1D14761000C94890 /* Products */,
+				0AE346EFBC4649F729726A9F /* Pods */,
+				683A1AAEEDA606DCE66AD853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,16 +153,17 @@
 		CEED5DAC1D14761000C94890 /* Kachalov */ = {
 			isa = PBXGroup;
 			children = (
+				CE7FF0F81D401DBD00A1C1A3 /* Resources */,
+				CEED5DC71D1B358200C94890 /* Model */,
 				CEED5DB01D14761000C94890 /* AppDelegate.h */,
 				CEED5DB11D14761000C94890 /* AppDelegate.m */,
-				CEED5DB31D14761000C94890 /* ViewController.h */,
-				CEED5DB41D14761000C94890 /* ViewController.m */,
 				CEED5DB61D14761000C94890 /* Main.storyboard */,
 				CEED5DBC1D14761000C94890 /* Assets.xcassets */,
 				CEED5DBE1D14761000C94890 /* LaunchScreen.storyboard */,
 				CEED5DC11D14761000C94890 /* Info.plist */,
 				CEED5DB91D14761000C94890 /* Kachalov.xcdatamodeld */,
 				CEED5DAD1D14761000C94890 /* Supporting Files */,
+				36EBC7DCF0DD08B6D39E12E4 /* ViewControllers */,
 			);
 			path = Kachalov;
 			sourceTree = "<group>";
@@ -82,6 +176,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CEED5DC71D1B358200C94890 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC7235AA256D28F53428F /* Entitys */,
+				36EBC830B47D0264B267A3EA /* Parsers */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEED5DC41D14761000C94890 /* Build configuration list for PBXNativeTarget "Kachalov" */;
 			buildPhases = (
+				45547C66FA95832DFFC7CBF9 /* Check Pods Manifest.lock */,
 				CEED5DA61D14761000C94890 /* Sources */,
 				CEED5DA71D14761000C94890 /* Frameworks */,
 				CEED5DA81D14761000C94890 /* Resources */,
+				7AA9FC7F5F28F2FCB7BA03D3 /* Embed Pods Frameworks */,
+				E635348F086196329AB3E92E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,6 +219,7 @@
 				TargetAttributes = {
 					CEED5DA91D14761000C94890 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = KNHK4XTQ2L;
 					};
 				};
 			};
@@ -139,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7FF0FC1D401E2A00A1C1A3 /* egr65-webfont.ttf in Resources */,
 				CEED5DC01D14761000C94890 /* LaunchScreen.storyboard in Resources */,
 				CEED5DBD1D14761000C94890 /* Assets.xcassets in Resources */,
 				CEED5DB81D14761000C94890 /* Main.storyboard in Resources */,
@@ -147,15 +255,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45547C66FA95832DFFC7CBF9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AA9FC7F5F28F2FCB7BA03D3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E635348F086196329AB3E92E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEED5DA61D14761000C94890 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEED5DB51D14761000C94890 /* ViewController.m in Sources */,
 				CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */,
 				CEED5DBB1D14761000C94890 /* Kachalov.xcdatamodeld in Sources */,
 				CEED5DAF1D14761000C94890 /* main.m in Sources */,
+				36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */,
+				36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */,
+				CEED5DCD1D242BEB00C94890 /* SmallAfficheTablewViewController.m in Sources */,
+				36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */,
+				36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,22 +423,26 @@
 		};
 		CEED5DC51D14761000C94890 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 403930AE8D58B7A2F94B72EF /* Pods-Kachalov.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Kachalov/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.me.Kachalov;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kachalov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		CEED5DC61D14761000C94890 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29E9305751BBC57DCAE59C5 /* Pods-Kachalov.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Kachalov/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.me.Kachalov;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.Kachalov;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -302,6 +466,7 @@
 				CEED5DC61D14761000C94890 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
