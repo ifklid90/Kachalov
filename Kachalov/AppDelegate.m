@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "AppearanceInstaller.h"
+
 
 @interface AppDelegate ()
 
@@ -17,6 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    UIFont *font = [UIFont fontWithName:@"EngraversGothicBold" size:16.0];
+//    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : font}];
+    [AppearanceInstaller applyAppearance];
     return YES;
 }
 

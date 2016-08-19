@@ -12,7 +12,20 @@
 		36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC6349703370454E22872 /* SmallAfficheParser.m */; };
 		36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */; };
 		36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */; };
+		CE5ED1171D6774E900E645ED /* AppearanceInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED1161D6774E900E645ED /* AppearanceInstaller.m */; };
+		CE7BEECE1D67905F0049E487 /* SegmentViewBackgroundImageStateNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7BEECC1D67905F0049E487 /* SegmentViewBackgroundImageStateNormal.png */; };
+		CE7BEECF1D67905F0049E487 /* SegmentViewBackgroundImageStateSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7BEECD1D67905F0049E487 /* SegmentViewBackgroundImageStateSelected.png */; };
 		CE7FF0FC1D401E2A00A1C1A3 /* egr65-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */; };
+		CE7FF1071D5BF16100A1C1A3 /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF1061D5BF16100A1C1A3 /* Artboard 1.png */; };
+		CE7FF1091D5BF8F800A1C1A3 /* controlBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF1081D5BF8F800A1C1A3 /* controlBackground.png */; };
+		CE7FF10B1D5D331800A1C1A3 /* Artboard 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF10A1D5D331800A1C1A3 /* Artboard 2.png */; };
+		CE7FF10D1D5D33D200A1C1A3 /* Artboard 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF10C1D5D33D200A1C1A3 /* Artboard 3.png */; };
+		CE7FF10F1D5D367C00A1C1A3 /* Artboard 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF10E1D5D367C00A1C1A3 /* Artboard 4.png */; };
+		CE7FF1111D5D382800A1C1A3 /* Artboard 5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF1101D5D382800A1C1A3 /* Artboard 5.png */; };
+		CE7FF1131D5D39C500A1C1A3 /* Artboard 6.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF1121D5D39C500A1C1A3 /* Artboard 6.png */; };
+		CE7FF1151D5D39CC00A1C1A3 /* Artboard 7.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF1141D5D39CC00A1C1A3 /* Artboard 7.png */; };
+		CED1C2A31D6357AF0025BC9A /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CED1C2A21D6357AF0025BC9A /* Arrow.png */; };
+		CED1C2A71D635A5A0025BC9A /* ArrowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1C2A61D635A5A0025BC9A /* ArrowButton.m */; };
 		CEED5DAF1D14761000C94890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DAE1D14761000C94890 /* main.m */; };
 		CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DB11D14761000C94890 /* AppDelegate.m */; };
 		CEED5DB81D14761000C94890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED5DB61D14761000C94890 /* Main.storyboard */; };
@@ -33,7 +46,22 @@
 		36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheCell.m; sourceTree = "<group>"; };
 		403930AE8D58B7A2F94B72EF /* Pods-Kachalov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.debug.xcconfig"; sourceTree = "<group>"; };
 		B63F46A07497E0957306C438 /* libPods-Kachalov.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kachalov.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5ED1151D6774E900E645ED /* AppearanceInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceInstaller.h; sourceTree = "<group>"; };
+		CE5ED1161D6774E900E645ED /* AppearanceInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceInstaller.m; sourceTree = "<group>"; };
+		CE7BEECC1D67905F0049E487 /* SegmentViewBackgroundImageStateNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentViewBackgroundImageStateNormal.png; sourceTree = "<group>"; };
+		CE7BEECD1D67905F0049E487 /* SegmentViewBackgroundImageStateSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentViewBackgroundImageStateSelected.png; sourceTree = "<group>"; };
 		CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "egr65-webfont.ttf"; path = "Resources/egr65-webfont.ttf"; sourceTree = "<group>"; };
+		CE7FF1061D5BF16100A1C1A3 /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 1.png"; sourceTree = "<group>"; };
+		CE7FF1081D5BF8F800A1C1A3 /* controlBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = controlBackground.png; sourceTree = "<group>"; };
+		CE7FF10A1D5D331800A1C1A3 /* Artboard 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 2.png"; sourceTree = "<group>"; };
+		CE7FF10C1D5D33D200A1C1A3 /* Artboard 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 3.png"; sourceTree = "<group>"; };
+		CE7FF10E1D5D367C00A1C1A3 /* Artboard 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 4.png"; sourceTree = "<group>"; };
+		CE7FF1101D5D382800A1C1A3 /* Artboard 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 5.png"; sourceTree = "<group>"; };
+		CE7FF1121D5D39C500A1C1A3 /* Artboard 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 6.png"; sourceTree = "<group>"; };
+		CE7FF1141D5D39CC00A1C1A3 /* Artboard 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 7.png"; sourceTree = "<group>"; };
+		CED1C2A21D6357AF0025BC9A /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
+		CED1C2A51D635A5A0025BC9A /* ArrowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowButton.h; sourceTree = "<group>"; };
+		CED1C2A61D635A5A0025BC9A /* ArrowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowButton.m; sourceTree = "<group>"; };
 		CEED5DAA1D14761000C94890 /* Kachalov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kachalov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEED5DAE1D14761000C94890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEED5DB01D14761000C94890 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,8 +156,30 @@
 			isa = PBXGroup;
 			children = (
 				CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */,
+				CE7BEECC1D67905F0049E487 /* SegmentViewBackgroundImageStateNormal.png */,
+				CE7BEECD1D67905F0049E487 /* SegmentViewBackgroundImageStateSelected.png */,
+				CE7FF1061D5BF16100A1C1A3 /* Artboard 1.png */,
+				CE7FF10A1D5D331800A1C1A3 /* Artboard 2.png */,
+				CE7FF10C1D5D33D200A1C1A3 /* Artboard 3.png */,
+				CE7FF10E1D5D367C00A1C1A3 /* Artboard 4.png */,
+				CE7FF1101D5D382800A1C1A3 /* Artboard 5.png */,
+				CE7FF1121D5D39C500A1C1A3 /* Artboard 6.png */,
+				CE7FF1141D5D39CC00A1C1A3 /* Artboard 7.png */,
+				CE7FF1081D5BF8F800A1C1A3 /* controlBackground.png */,
+				CED1C2A21D6357AF0025BC9A /* Arrow.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		CED1C2A41D6359F60025BC9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CED1C2A51D635A5A0025BC9A /* ArrowButton.h */,
+				CED1C2A61D635A5A0025BC9A /* ArrowButton.m */,
+				CE5ED1151D6774E900E645ED /* AppearanceInstaller.h */,
+				CE5ED1161D6774E900E645ED /* AppearanceInstaller.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		CEED5DA11D14761000C94890 = {
@@ -153,6 +203,7 @@
 		CEED5DAC1D14761000C94890 /* Kachalov */ = {
 			isa = PBXGroup;
 			children = (
+				CED1C2A41D6359F60025BC9A /* Views */,
 				CE7FF0F81D401DBD00A1C1A3 /* Resources */,
 				CEED5DC71D1B358200C94890 /* Model */,
 				CEED5DB01D14761000C94890 /* AppDelegate.h */,
@@ -246,10 +297,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7FF1131D5D39C500A1C1A3 /* Artboard 6.png in Resources */,
 				CE7FF0FC1D401E2A00A1C1A3 /* egr65-webfont.ttf in Resources */,
 				CEED5DC01D14761000C94890 /* LaunchScreen.storyboard in Resources */,
+				CE7FF1071D5BF16100A1C1A3 /* Artboard 1.png in Resources */,
+				CE7BEECF1D67905F0049E487 /* SegmentViewBackgroundImageStateSelected.png in Resources */,
+				CE7FF10D1D5D33D200A1C1A3 /* Artboard 3.png in Resources */,
 				CEED5DBD1D14761000C94890 /* Assets.xcassets in Resources */,
+				CE7FF10B1D5D331800A1C1A3 /* Artboard 2.png in Resources */,
 				CEED5DB81D14761000C94890 /* Main.storyboard in Resources */,
+				CE7FF1111D5D382800A1C1A3 /* Artboard 5.png in Resources */,
+				CE7BEECE1D67905F0049E487 /* SegmentViewBackgroundImageStateNormal.png in Resources */,
+				CED1C2A31D6357AF0025BC9A /* Arrow.png in Resources */,
+				CE7FF1091D5BF8F800A1C1A3 /* controlBackground.png in Resources */,
+				CE7FF10F1D5D367C00A1C1A3 /* Artboard 4.png in Resources */,
+				CE7FF1151D5D39CC00A1C1A3 /* Artboard 7.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,12 +372,14 @@
 			files = (
 				CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */,
 				CEED5DBB1D14761000C94890 /* Kachalov.xcdatamodeld in Sources */,
+				CE5ED1171D6774E900E645ED /* AppearanceInstaller.m in Sources */,
 				CEED5DAF1D14761000C94890 /* main.m in Sources */,
 				36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */,
 				36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */,
 				CEED5DCD1D242BEB00C94890 /* SmallAfficheTablewViewController.m in Sources */,
 				36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */,
 				36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */,
+				CED1C2A71D635A5A0025BC9A /* ArrowButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

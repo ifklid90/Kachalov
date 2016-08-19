@@ -21,6 +21,10 @@
 
 @property (nonatomic) NSArray *smallSceneElementsByMonths;
 @property (nonatomic) NSArray *largeSceneElementsByMonths;
+@property (weak, nonatomic) IBOutlet UILabel *monthLabel;
+
+@property (nonatomic) NSInteger monthIndex;
+@property (nonatomic) NSInteger sceneIndex;
 
 @end
 
@@ -28,16 +32,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    if (self.dataTask != nil) {
-//        [self.dataTask cancel];
-//    }
+    
+    self.table.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor blackColor];
+//    UIFont *font = [UIFont fontWithName:@"EngraversGothicBold" size:16.0];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.table.rowHeight = UITableViewAutomaticDimension;
+    self.table.estimatedRowHeight = 50;
+    
+//    self.segmentedControl.tintColor = [UIColor whiteColor];
     
     
-    self.tableView.backgroundColor = [UIColor blackColor];
-
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
-    self.tableView.estimatedRowHeight = 50;
+//    [self.segmentedControl setTitleTextAttributes:@{NSFontAttributeName : font, NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateNormal];
+//    [self.segmentedControl setTitleTextAttributes:@{NSFontAttributeName : font, NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateSelected];
+    
+//    UIImage *image = [UIImage imageNamed:@"Artboard 2.png"];
+//    UIImage *finalImage = [image resizableImageWithCapInsets:UIEdgeInsetsMake(1.0, 0.0, 1.0, 0.0)];
+//    [self.segmentedControl setBackgroundImage:finalImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    
+//    UIImage *image2 = [UIImage imageNamed:@"Artboard 5.png"];
+//    UIImage *finalImage2 = [image2 resizableImageWithCapInsets:UIEdgeInsetsMake(3.0, 2.0, 3.0, 2.0)];
+//    [self.segmentedControl setBackgroundImage:finalImage2 forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+//    
+//    UIImage *deviderImage = [UIImage imageNamed:@"Artboard 4.png"];
+//    [self.segmentedControl setDividerImage:deviderImage forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+//    UIImage *deviderImage2 = [[UIImage imageNamed:@"Artboard 7"] resizableImageWithCapInsets:UIEdgeInsetsMake(3.0, 1.0, 3.0, 1.0)];
+//    [self.segmentedControl setDividerImage:deviderImage2 forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+//    UIImage *deviderImage3 = [[UIImage imageNamed:@"Artboard 6"] resizableImageWithCapInsets:UIEdgeInsetsMake(3.0, 1.0, 3.0, 1.0)];
+//    [self.segmentedControl setDividerImage:deviderImage3 forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.defaultSession = [NSURLSession sessionWithConfiguration:config];
@@ -51,7 +75,7 @@
         } else {
 
             NSString *htmlCodeString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-            NSLog(@"%@", htmlCodeString);
+//            NSLog(@"%@", htmlCodeString);
             SmallAfficheParser *parser = [SmallAfficheParser new];
             [parser parseWithString:htmlCodeString];
 
@@ -71,24 +95,27 @@
 
     self.smallSceneElementsByMonths = parser.smallSceneElementsByMonths;
     self.largeSceneElementsByMonths = parser.largeSceneElementsByMonths;
+    
+    [self reloadMonthLabel];
 
-    [[self tableView] reloadData];
+    [self.table reloadData];
 }
 
 #pragma mark Table
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [self.largeSceneMonths count];
+    return 1;
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.largeSceneElementsByMonths[section] count];
-}
-
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return self.largeSceneMonths[section];
+    if (self.sceneIndex == 0) {
+        return [self.largeSceneElementsByMonths[self.monthIndex] count];
+    } else {
+        return [self.smallSceneElementsByMonths[self.monthIndex] count];
+    }
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -96,8 +123,13 @@
     NSString *cellId = @"SmallAfficheTableViewCell";
     SmallAfficheCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
 
-//    cell.textLabel.text =
-    SmallAfficheElement *element = self.largeSceneElementsByMonths[indexPath.section][indexPath.row];
+    SmallAfficheElement *element;
+    if (self.sceneIndex == 0) {
+        element = self.largeSceneElementsByMonths[self.monthIndex][indexPath.row];
+    } else {
+        element = self.smallSceneElementsByMonths[self.monthIndex][indexPath.row];
+    }
+    
 
     cell.dateTextLabel.text     = element.date;
     cell.dayTextLabel.text      = element.day;
@@ -106,10 +138,55 @@
     cell.nameTextLabel.text     = element.name;
     cell.genreTextLabel.text    = element.genre;
     cell.ageRatingLabel.text    = element.ageRaiting;
-
-//    section][indexPath.row] description];
-//    cell.textLabel.text = [self.largeSceneElementsByMonths[indexPath.section][indexPath.row] description];
+    
     return cell;
+}
+
+- (IBAction)monthSegmentControlValueChanged:(id)sender {
+    
+    self.sceneIndex = [self.segmentedControl selectedSegmentIndex];
+    self.monthIndex = 0;
+    [self reloadMonthLabel];
+    [self.table reloadData];
+}
+
+- (IBAction)leftButtonPressed:(id)sender {
+    NSInteger monthsCount;
+    if (self.sceneIndex == 0) {
+        monthsCount = [self.largeSceneMonths count];
+    } else {
+        monthsCount = [self.smallSceneMonths count];
+    }
+    
+    if (self.monthIndex == 0) {
+        self.monthIndex = monthsCount - 1;
+    } else {
+        self.monthIndex = (self.monthIndex - 1) % monthsCount;
+    }
+    
+    [self reloadMonthLabel];
+    [self.table reloadData];
+}
+
+- (IBAction)rightButtonPressed:(id)sender {
+    NSInteger monthsCount;
+    if (self.sceneIndex == 0) {
+        monthsCount = [self.largeSceneMonths count];
+    } else {
+        monthsCount = [self.smallSceneMonths count];
+    }
+    self.monthIndex = (self.monthIndex + 1) % monthsCount;
+    
+    [self reloadMonthLabel];
+    [self.table reloadData];
+}
+
+- (void)reloadMonthLabel {
+    if (self.sceneIndex == 0) {
+        self.monthLabel.text = self.largeSceneMonths[self.monthIndex];
+    } else {
+        self.monthLabel.text = self.smallSceneMonths[self.monthIndex];
+    }
 }
 
 

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SmallAfficheTablewViewController : UITableViewController <UITableViewDataSource>
+@interface SmallAfficheTablewViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *table;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 @end
