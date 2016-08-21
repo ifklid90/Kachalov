@@ -35,33 +35,11 @@
     
     self.table.backgroundColor = [UIColor blackColor];
     self.view.backgroundColor = [UIColor blackColor];
-//    UIFont *font = [UIFont fontWithName:@"EngraversGothicBold" size:16.0];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.table.rowHeight = UITableViewAutomaticDimension;
     self.table.estimatedRowHeight = 50;
-    
-//    self.segmentedControl.tintColor = [UIColor whiteColor];
-    
-    
-//    [self.segmentedControl setTitleTextAttributes:@{NSFontAttributeName : font, NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateNormal];
-//    [self.segmentedControl setTitleTextAttributes:@{NSFontAttributeName : font, NSForegroundColorAttributeName : [UIColor whiteColor]} forState:UIControlStateSelected];
-    
-//    UIImage *image = [UIImage imageNamed:@"Artboard 2.png"];
-//    UIImage *finalImage = [image resizableImageWithCapInsets:UIEdgeInsetsMake(1.0, 0.0, 1.0, 0.0)];
-//    [self.segmentedControl setBackgroundImage:finalImage forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//    
-//    UIImage *image2 = [UIImage imageNamed:@"Artboard 5.png"];
-//    UIImage *finalImage2 = [image2 resizableImageWithCapInsets:UIEdgeInsetsMake(3.0, 2.0, 3.0, 2.0)];
-//    [self.segmentedControl setBackgroundImage:finalImage2 forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-//    
-//    UIImage *deviderImage = [UIImage imageNamed:@"Artboard 4.png"];
-//    [self.segmentedControl setDividerImage:deviderImage forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
-//    UIImage *deviderImage2 = [[UIImage imageNamed:@"Artboard 7"] resizableImageWithCapInsets:UIEdgeInsetsMake(3.0, 1.0, 3.0, 1.0)];
-//    [self.segmentedControl setDividerImage:deviderImage2 forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
-//    UIImage *deviderImage3 = [[UIImage imageNamed:@"Artboard 6"] resizableImageWithCapInsets:UIEdgeInsetsMake(3.0, 1.0, 3.0, 1.0)];
-//    [self.segmentedControl setDividerImage:deviderImage3 forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.defaultSession = [NSURLSession sessionWithConfiguration:config];
@@ -142,7 +120,7 @@
     return cell;
 }
 
-- (IBAction)monthSegmentControlValueChanged:(id)sender {
+- (IBAction)sceneSegmentControlValueChanged:(id)sender {
     
     self.sceneIndex = [self.segmentedControl selectedSegmentIndex];
     self.monthIndex = 0;
