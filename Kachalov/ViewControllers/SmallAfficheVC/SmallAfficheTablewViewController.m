@@ -26,6 +26,8 @@
 @property (nonatomic) NSInteger monthIndex;
 @property (nonatomic) NSInteger sceneIndex;
 
+@property (nonatomic) UIActivityIndicatorView *activityIndicator;
+
 @end
 
 @implementation SmallAfficheTablewViewController
@@ -39,16 +41,19 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     self.table.rowHeight = UITableViewAutomaticDimension;
-    self.table.estimatedRowHeight = 50;
+    self.table.estimatedRowHeight = 100;
     
     NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.defaultSession = [NSURLSession sessionWithConfiguration:config];
 
 
     NSURL *url = [NSURL URLWithString:@"http://www.teatrkachalov.ru"];
-
+    [self showActivityIndicator];
     self.dataTask = [self.defaultSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.activityIndicator stopAnimating];
+            });
             NSLog(@"%@", [error localizedDescription]);
         } else {
 
@@ -58,6 +63,7 @@
             [parser parseWithString:htmlCodeString];
 
             dispatch_async(dispatch_get_main_queue(), ^{
+                [self.activityIndicator stopAnimating];
                 [self showDataWithParser:parser];
             });
 
@@ -165,6 +171,17 @@
     } else {
         self.monthLabel.text = self.smallSceneMonths[self.monthIndex];
     }
+}
+
+- (void)showActivityIndicator
+{
+    if (!self.activityIndicator) {
+        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    }
+    self.activityIndicator.frame = CGRectMake(0.0, 0.0, 80.0, 80.0);
+    self.activityIndicator.center = self.view.center;
+    [self.view addSubview:self.activityIndicator];
+    [self.activityIndicator startAnimating];
 }
 
 

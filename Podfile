@@ -5,5 +5,6 @@
 
 target 'Kachalov' do
 pod "HTMLKit"
+pod 'SDWebImage', '~>3.8'
 end
 

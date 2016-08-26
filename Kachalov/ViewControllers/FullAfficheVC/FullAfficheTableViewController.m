@@ -21,6 +21,8 @@
 
 @property (nonatomic) NSArray *elementsSource;
 
+@property (nonatomic) UIActivityIndicatorView *activityIndicator;
+
 
 @end
 
@@ -42,8 +44,12 @@
     
     NSURL *url = [NSURL URLWithString:@"http://www.teatrkachalov.ru/spectacle/"];
     
+    [self showActivityIndicator];
     self.dataTask = [self.defaultSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.activityIndicator startAnimating];
+            });
             NSLog(@"%@", [error localizedDescription]);
         } else {
             NSString *htmlCodeString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
@@ -51,6 +57,7 @@
             [parser parseWithString:htmlCodeString];
             
             dispatch_async(dispatch_get_main_queue(), ^{
+                [self.activityIndicator stopAnimating];
                 [self showDataWithParser:parser];
             });
         }
@@ -106,6 +113,17 @@
     }
     
     [self.table reloadData];
+}
+
+- (void)showActivityIndicator
+{
+    if (!self.activityIndicator) {
+        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    }
+    self.activityIndicator.frame = CGRectMake(0.0, 0.0, 80.0, 80.0);
+    self.activityIndicator.center = self.view.center;
+    [self.view addSubview:self.activityIndicator];
+    [self.activityIndicator startAnimating];
 }
 
 @end

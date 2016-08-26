@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E978D13C37A7CD304511BDAEC9B575C3"
-               BlueprintName = "HTMLKit"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libHTMLKit.a">
+               BuildableIdentifier = 'primary'
+               BlueprintIdentifier = 'E978D13C37A7CD304511BDAEC9B575C3'
+               BlueprintName = 'HTMLKit'
+               ReferencedContainer = 'container:Pods.xcodeproj'
+               BuildableName = 'libHTMLKit.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06A6C5EFCD5CEA76CD2660D6 /* libPods-Kachalov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63F46A07497E0957306C438 /* libPods-Kachalov.a */; };
 		36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC425C50F8C6ECDD744E1 /* ViewController.m */; };
 		36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC6349703370454E22872 /* SmallAfficheParser.m */; };
 		36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */; };
 		36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */; };
+		91406474B5FE564AFE27F5CF /* libPods-Kachalov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DBC56B29E40657E6C6A76 /* libPods-Kachalov.a */; };
 		CE5ED1171D6774E900E645ED /* AppearanceInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED1161D6774E900E645ED /* AppearanceInstaller.m */; };
 		CE753A3A1D69D3B900F2D4C5 /* SegmentViewBackgroundImageStateSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = CE753A391D69D3B900F2D4C5 /* SegmentViewBackgroundImageStateSelected.png */; };
 		CE753A3C1D69D9E000F2D4C5 /* SegmentViewDeviderLNRS.png in Resources */ = {isa = PBXBuildFile; fileRef = CE753A3B1D69D9E000F2D4C5 /* SegmentViewDeviderLNRS.png */; };
@@ -21,7 +21,12 @@
 		CE7BEED61D67B0340049E487 /* FullAfficheParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7BEED51D67B0340049E487 /* FullAfficheParser.m */; };
 		CE7FF0FC1D401E2A00A1C1A3 /* egr65-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */; };
 		CE7FF10F1D5D367C00A1C1A3 /* SegmentViewDividerLNRN.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF10E1D5D367C00A1C1A3 /* SegmentViewDividerLNRN.png */; };
+		CE99F1671D70DFF000A29CB6 /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99F1661D70DFF000A29CB6 /* LoadingCell.m */; };
 		CED1C2A71D635A5A0025BC9A /* ArrowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1C2A61D635A5A0025BC9A /* ArrowButton.m */; };
+		CEDC6F641D6E27CD005A0D41 /* NewsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F631D6E27CD005A0D41 /* NewsListTableViewController.m */; };
+		CEDC6F671D6E4211005A0D41 /* NewsShortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F661D6E4211005A0D41 /* NewsShortCell.m */; };
+		CEDC6F6A1D6F38CF005A0D41 /* NewsListElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */; };
+		CEDC6F6D1D6F39AE005A0D41 /* NewsListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */; };
 		CEED5DAF1D14761000C94890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DAE1D14761000C94890 /* main.m */; };
 		CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DB11D14761000C94890 /* AppDelegate.m */; };
 		CEED5DB81D14761000C94890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED5DB61D14761000C94890 /* Main.storyboard */; };
@@ -32,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		093DBC56B29E40657E6C6A76 /* libPods-Kachalov.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kachalov.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D68A140D4CF985C34FE84B /* Pods-Kachalov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.debug.xcconfig"; sourceTree = "<group>"; };
 		36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmallAfficheElement.m; path = Model/SmallAfficheElement.m; sourceTree = "<group>"; };
 		36EBC425C50F8C6ECDD744E1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		36EBC6349703370454E22872 /* SmallAfficheParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheParser.m; sourceTree = "<group>"; };
@@ -40,8 +47,7 @@
 		36EBCD6D481A08A52CD3156E /* SmallAfficheParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallAfficheParser.h; sourceTree = "<group>"; };
 		36EBCED7674A36FEBBC80B6F /* SmallAfficheElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmallAfficheElement.h; path = Model/SmallAfficheElement.h; sourceTree = "<group>"; };
 		36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheCell.m; sourceTree = "<group>"; };
-		403930AE8D58B7A2F94B72EF /* Pods-Kachalov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.debug.xcconfig"; sourceTree = "<group>"; };
-		B63F46A07497E0957306C438 /* libPods-Kachalov.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kachalov.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A7D839C51761F5FB4E1828 /* Pods-Kachalov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.release.xcconfig"; sourceTree = "<group>"; };
 		CE5ED1151D6774E900E645ED /* AppearanceInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceInstaller.h; sourceTree = "<group>"; };
 		CE5ED1161D6774E900E645ED /* AppearanceInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceInstaller.m; sourceTree = "<group>"; };
 		CE753A391D69D3B900F2D4C5 /* SegmentViewBackgroundImageStateSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentViewBackgroundImageStateSelected.png; sourceTree = "<group>"; };
@@ -54,8 +60,18 @@
 		CE7BEED51D67B0340049E487 /* FullAfficheParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FullAfficheParser.m; path = Model/FullAfficheParser.m; sourceTree = "<group>"; };
 		CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "egr65-webfont.ttf"; path = "Resources/egr65-webfont.ttf"; sourceTree = "<group>"; };
 		CE7FF10E1D5D367C00A1C1A3 /* SegmentViewDividerLNRN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentViewDividerLNRN.png; sourceTree = "<group>"; };
+		CE99F1651D70DFF000A29CB6 /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
+		CE99F1661D70DFF000A29CB6 /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
 		CED1C2A51D635A5A0025BC9A /* ArrowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowButton.h; sourceTree = "<group>"; };
 		CED1C2A61D635A5A0025BC9A /* ArrowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrowButton.m; sourceTree = "<group>"; };
+		CEDC6F621D6E27CD005A0D41 /* NewsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListTableViewController.h; path = NewsListVC/NewsListTableViewController.h; sourceTree = "<group>"; };
+		CEDC6F631D6E27CD005A0D41 /* NewsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListTableViewController.m; path = NewsListVC/NewsListTableViewController.m; sourceTree = "<group>"; };
+		CEDC6F651D6E4211005A0D41 /* NewsShortCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsShortCell.h; sourceTree = "<group>"; };
+		CEDC6F661D6E4211005A0D41 /* NewsShortCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsShortCell.m; sourceTree = "<group>"; };
+		CEDC6F681D6F38CF005A0D41 /* NewsListElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListElement.h; path = Model/NewsListElement.h; sourceTree = "<group>"; };
+		CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListElement.m; path = Model/NewsListElement.m; sourceTree = "<group>"; };
+		CEDC6F6B1D6F39AE005A0D41 /* NewsListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListParser.h; path = Model/NewsListParser.h; sourceTree = "<group>"; };
+		CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListParser.m; path = Model/NewsListParser.m; sourceTree = "<group>"; };
 		CEED5DAA1D14761000C94890 /* Kachalov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kachalov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEED5DAE1D14761000C94890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEED5DB01D14761000C94890 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,7 +83,6 @@
 		CEED5DC11D14761000C94890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEED5DCB1D242BEB00C94890 /* SmallAfficheTablewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallAfficheTablewViewController.h; sourceTree = "<group>"; };
 		CEED5DCC1D242BEB00C94890 /* SmallAfficheTablewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheTablewViewController.m; sourceTree = "<group>"; };
-		D29E9305751BBC57DCAE59C5 /* Pods-Kachalov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,22 +90,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06A6C5EFCD5CEA76CD2660D6 /* libPods-Kachalov.a in Frameworks */,
+				91406474B5FE564AFE27F5CF /* libPods-Kachalov.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AE346EFBC4649F729726A9F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				403930AE8D58B7A2F94B72EF /* Pods-Kachalov.debug.xcconfig */,
-				D29E9305751BBC57DCAE59C5 /* Pods-Kachalov.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		36EBC00CB4BB8474432D8BC8 /* SmallAfficheVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +111,8 @@
 			children = (
 				36EBCED7674A36FEBBC80B6F /* SmallAfficheElement.h */,
 				36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */,
+				CEDC6F681D6F38CF005A0D41 /* NewsListElement.h */,
+				CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */,
 			);
 			name = Entitys;
 			sourceTree = "<group>";
@@ -112,6 +120,7 @@
 		36EBC7DCF0DD08B6D39E12E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CEDC6F611D6E270F005A0D41 /* NewsListVC */,
 				36EBC84570C51E8951878040 /* ViewController.h */,
 				36EBC425C50F8C6ECDD744E1 /* ViewController.m */,
 				CE7BEED01D67A99D0049E487 /* FullAfficheVC */,
@@ -128,6 +137,8 @@
 				36EBCD6D481A08A52CD3156E /* SmallAfficheParser.h */,
 				CE7BEED41D67B0340049E487 /* FullAfficheParser.h */,
 				CE7BEED51D67B0340049E487 /* FullAfficheParser.m */,
+				CEDC6F6B1D6F39AE005A0D41 /* NewsListParser.h */,
+				CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -137,16 +148,29 @@
 			children = (
 				36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */,
 				36EBC9B11C628CDBE95DD21F /* SmallAfficheCell.h */,
+				CEDC6F651D6E4211005A0D41 /* NewsShortCell.h */,
+				CEDC6F661D6E4211005A0D41 /* NewsShortCell.m */,
+				CE99F1651D70DFF000A29CB6 /* LoadingCell.h */,
+				CE99F1661D70DFF000A29CB6 /* LoadingCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		683A1AAEEDA606DCE66AD853 /* Frameworks */ = {
+		93DD655493E1CACC29B48A31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B63F46A07497E0957306C438 /* libPods-Kachalov.a */,
+				093DBC56B29E40657E6C6A76 /* libPods-Kachalov.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7763EE66045BF739ABB76EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18D68A140D4CF985C34FE84B /* Pods-Kachalov.debug.xcconfig */,
+				45A7D839C51761F5FB4E1828 /* Pods-Kachalov.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CE7BEED01D67A99D0049E487 /* FullAfficheVC */ = {
@@ -182,13 +206,22 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		CEDC6F611D6E270F005A0D41 /* NewsListVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6F621D6E27CD005A0D41 /* NewsListTableViewController.h */,
+				CEDC6F631D6E27CD005A0D41 /* NewsListTableViewController.m */,
+			);
+			name = NewsListVC;
+			sourceTree = "<group>";
+		};
 		CEED5DA11D14761000C94890 = {
 			isa = PBXGroup;
 			children = (
 				CEED5DAC1D14761000C94890 /* Kachalov */,
 				CEED5DAB1D14761000C94890 /* Products */,
-				0AE346EFBC4649F729726A9F /* Pods */,
-				683A1AAEEDA606DCE66AD853 /* Frameworks */,
+				C7763EE66045BF739ABB76EA /* Pods */,
+				93DD655493E1CACC29B48A31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,12 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEED5DC41D14761000C94890 /* Build configuration list for PBXNativeTarget "Kachalov" */;
 			buildPhases = (
-				45547C66FA95832DFFC7CBF9 /* Check Pods Manifest.lock */,
+				A95FECBF00FF78DB27715CE4 /* [CP] Check Pods Manifest.lock */,
 				CEED5DA61D14761000C94890 /* Sources */,
 				CEED5DA71D14761000C94890 /* Frameworks */,
 				CEED5DA81D14761000C94890 /* Resources */,
-				7AA9FC7F5F28F2FCB7BA03D3 /* Embed Pods Frameworks */,
-				E635348F086196329AB3E92E /* Copy Pods Resources */,
+				488E79D41252393A7ED78CB9 /* [CP] Embed Pods Frameworks */,
+				7FBBA3CBB370F698DBF74F26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,29 +345,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45547C66FA95832DFFC7CBF9 /* Check Pods Manifest.lock */ = {
+		488E79D41252393A7ED78CB9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7AA9FC7F5F28F2FCB7BA03D3 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,19 +360,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E635348F086196329AB3E92E /* Copy Pods Resources */ = {
+		7FBBA3CBB370F698DBF74F26 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A95FECBF00FF78DB27715CE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -365,17 +398,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */,
+				CEDC6F6D1D6F39AE005A0D41 /* NewsListParser.m in Sources */,
+				CEDC6F641D6E27CD005A0D41 /* NewsListTableViewController.m in Sources */,
 				CEED5DBB1D14761000C94890 /* Kachalov.xcdatamodeld in Sources */,
+				CEDC6F6A1D6F38CF005A0D41 /* NewsListElement.m in Sources */,
 				CE5ED1171D6774E900E645ED /* AppearanceInstaller.m in Sources */,
 				CEED5DAF1D14761000C94890 /* main.m in Sources */,
 				CE7BEED61D67B0340049E487 /* FullAfficheParser.m in Sources */,
 				36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */,
 				36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */,
 				CEED5DCD1D242BEB00C94890 /* SmallAfficheTablewViewController.m in Sources */,
+				CE99F1671D70DFF000A29CB6 /* LoadingCell.m in Sources */,
 				36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */,
 				36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */,
 				CE7BEED31D67AA1C0049E487 /* FullAfficheTableViewController.m in Sources */,
 				CED1C2A71D635A5A0025BC9A /* ArrowButton.m in Sources */,
+				CEDC6F671D6E4211005A0D41 /* NewsShortCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +521,7 @@
 		};
 		CEED5DC51D14761000C94890 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 403930AE8D58B7A2F94B72EF /* Pods-Kachalov.debug.xcconfig */;
+			baseConfigurationReference = 18D68A140D4CF985C34FE84B /* Pods-Kachalov.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -496,7 +534,7 @@
 		};
 		CEED5DC61D14761000C94890 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D29E9305751BBC57DCAE59C5 /* Pods-Kachalov.release.xcconfig */;
+			baseConfigurationReference = 45A7D839C51761F5FB4E1828 /* Pods-Kachalov.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
