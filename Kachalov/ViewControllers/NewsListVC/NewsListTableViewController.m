@@ -119,7 +119,7 @@
     [cell.newsImage sd_setImageWithURL:url completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         if (image && cacheType == SDImageCacheTypeNone){
             cell.newsImage.alpha = 0.0;
-            [UIView animateWithDuration:1.0
+            [UIView animateWithDuration:0.3
                              animations:^{
                                  cell.newsImage.alpha = 1.0;
                              }];

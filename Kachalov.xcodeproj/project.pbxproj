@@ -21,6 +21,10 @@
 		CE7BEED61D67B0340049E487 /* FullAfficheParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7BEED51D67B0340049E487 /* FullAfficheParser.m */; };
 		CE7FF0FC1D401E2A00A1C1A3 /* egr65-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */; };
 		CE7FF10F1D5D367C00A1C1A3 /* SegmentViewDividerLNRN.png in Resources */ = {isa = PBXBuildFile; fileRef = CE7FF10E1D5D367C00A1C1A3 /* SegmentViewDividerLNRN.png */; };
+		CE92B30E1D722EFE0090A239 /* TroupeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE92B30D1D722EFE0090A239 /* TroupeListViewController.m */; };
+		CE92B3121D7344250090A239 /* ActorListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE92B3111D7344250090A239 /* ActorListCell.m */; };
+		CE92B3151D73455D0090A239 /* ActorListElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE92B3141D73455D0090A239 /* ActorListElement.m */; };
+		CE92B3181D734A620090A239 /* TroupeListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE92B3171D734A620090A239 /* TroupeListParser.m */; };
 		CE99F1671D70DFF000A29CB6 /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99F1661D70DFF000A29CB6 /* LoadingCell.m */; };
 		CED1C2A71D635A5A0025BC9A /* ArrowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CED1C2A61D635A5A0025BC9A /* ArrowButton.m */; };
 		CEDC6F641D6E27CD005A0D41 /* NewsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F631D6E27CD005A0D41 /* NewsListTableViewController.m */; };
@@ -60,6 +64,14 @@
 		CE7BEED51D67B0340049E487 /* FullAfficheParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FullAfficheParser.m; path = Model/FullAfficheParser.m; sourceTree = "<group>"; };
 		CE7FF0FB1D401E2A00A1C1A3 /* egr65-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "egr65-webfont.ttf"; path = "Resources/egr65-webfont.ttf"; sourceTree = "<group>"; };
 		CE7FF10E1D5D367C00A1C1A3 /* SegmentViewDividerLNRN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentViewDividerLNRN.png; sourceTree = "<group>"; };
+		CE92B30C1D722EFE0090A239 /* TroupeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TroupeListViewController.h; path = TroupeListVC/TroupeListViewController.h; sourceTree = "<group>"; };
+		CE92B30D1D722EFE0090A239 /* TroupeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TroupeListViewController.m; path = TroupeListVC/TroupeListViewController.m; sourceTree = "<group>"; };
+		CE92B3101D7344250090A239 /* ActorListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActorListCell.h; sourceTree = "<group>"; };
+		CE92B3111D7344250090A239 /* ActorListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActorListCell.m; sourceTree = "<group>"; };
+		CE92B3131D73455D0090A239 /* ActorListElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActorListElement.h; path = Model/ActorListElement.h; sourceTree = "<group>"; };
+		CE92B3141D73455D0090A239 /* ActorListElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActorListElement.m; path = Model/ActorListElement.m; sourceTree = "<group>"; };
+		CE92B3161D734A620090A239 /* TroupeListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TroupeListParser.h; path = Model/TroupeListParser.h; sourceTree = "<group>"; };
+		CE92B3171D734A620090A239 /* TroupeListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TroupeListParser.m; path = Model/TroupeListParser.m; sourceTree = "<group>"; };
 		CE99F1651D70DFF000A29CB6 /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
 		CE99F1661D70DFF000A29CB6 /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
 		CED1C2A51D635A5A0025BC9A /* ArrowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrowButton.h; sourceTree = "<group>"; };
@@ -113,6 +125,8 @@
 				36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */,
 				CEDC6F681D6F38CF005A0D41 /* NewsListElement.h */,
 				CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */,
+				CE92B3131D73455D0090A239 /* ActorListElement.h */,
+				CE92B3141D73455D0090A239 /* ActorListElement.m */,
 			);
 			name = Entitys;
 			sourceTree = "<group>";
@@ -120,9 +134,10 @@
 		36EBC7DCF0DD08B6D39E12E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CEDC6F611D6E270F005A0D41 /* NewsListVC */,
 				36EBC84570C51E8951878040 /* ViewController.h */,
 				36EBC425C50F8C6ECDD744E1 /* ViewController.m */,
+				CE92B30F1D722F070090A239 /* TroupeListVC */,
+				CEDC6F611D6E270F005A0D41 /* NewsListVC */,
 				CE7BEED01D67A99D0049E487 /* FullAfficheVC */,
 				36EBC00CB4BB8474432D8BC8 /* SmallAfficheVC */,
 				36EBCFE465A090BFAAC7D566 /* Cells */,
@@ -139,6 +154,8 @@
 				CE7BEED51D67B0340049E487 /* FullAfficheParser.m */,
 				CEDC6F6B1D6F39AE005A0D41 /* NewsListParser.h */,
 				CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */,
+				CE92B3161D734A620090A239 /* TroupeListParser.h */,
+				CE92B3171D734A620090A239 /* TroupeListParser.m */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -152,6 +169,8 @@
 				CEDC6F661D6E4211005A0D41 /* NewsShortCell.m */,
 				CE99F1651D70DFF000A29CB6 /* LoadingCell.h */,
 				CE99F1661D70DFF000A29CB6 /* LoadingCell.m */,
+				CE92B3101D7344250090A239 /* ActorListCell.h */,
+				CE92B3111D7344250090A239 /* ActorListCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -193,6 +212,15 @@
 				CE7FF10E1D5D367C00A1C1A3 /* SegmentViewDividerLNRN.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		CE92B30F1D722F070090A239 /* TroupeListVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE92B30C1D722EFE0090A239 /* TroupeListViewController.h */,
+				CE92B30D1D722EFE0090A239 /* TroupeListViewController.m */,
+			);
+			name = TroupeListVC;
 			sourceTree = "<group>";
 		};
 		CED1C2A41D6359F60025BC9A /* Views */ = {
@@ -398,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */,
+				CE92B3181D734A620090A239 /* TroupeListParser.m in Sources */,
 				CEDC6F6D1D6F39AE005A0D41 /* NewsListParser.m in Sources */,
 				CEDC6F641D6E27CD005A0D41 /* NewsListTableViewController.m in Sources */,
 				CEED5DBB1D14761000C94890 /* Kachalov.xcdatamodeld in Sources */,
@@ -407,11 +436,14 @@
 				CE7BEED61D67B0340049E487 /* FullAfficheParser.m in Sources */,
 				36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */,
 				36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */,
+				CE92B3121D7344250090A239 /* ActorListCell.m in Sources */,
 				CEED5DCD1D242BEB00C94890 /* SmallAfficheTablewViewController.m in Sources */,
+				CE92B3151D73455D0090A239 /* ActorListElement.m in Sources */,
 				CE99F1671D70DFF000A29CB6 /* LoadingCell.m in Sources */,
 				36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */,
 				36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */,
 				CE7BEED31D67AA1C0049E487 /* FullAfficheTableViewController.m in Sources */,
+				CE92B30E1D722EFE0090A239 /* TroupeListViewController.m in Sources */,
 				CED1C2A71D635A5A0025BC9A /* ArrowButton.m in Sources */,
 				CEDC6F671D6E4211005A0D41 /* NewsShortCell.m in Sources */,
 			);
