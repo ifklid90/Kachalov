@@ -58,7 +58,7 @@
         } else {
 
             NSString *htmlCodeString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-//            NSLog(@"%@", htmlCodeString);
+
             SmallAfficheParser *parser = [SmallAfficheParser new];
             [parser parseWithString:htmlCodeString];
 
