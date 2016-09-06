@@ -12,9 +12,10 @@
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"\nname = %@;\nimageURl = %@;\n",
+    return [NSString stringWithFormat:@"\nname = %@;\nimageURl = %@;\ndetailURL = %@;\n",
             self.actorName,
-            self.actorImageURL];
+            self.actorImageURL,
+            self.detailURL];
 }
 
 

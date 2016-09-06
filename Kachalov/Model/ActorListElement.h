@@ -12,5 +12,6 @@
 
 @property (nonatomic) NSString *actorName;
 @property (nonatomic) NSString *actorImageURL;
+@property (nonatomic) NSString *detailURL;
 
 @end

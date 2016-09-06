@@ -35,6 +35,7 @@
         ActorListElement *element = [ActorListElement new];
         element.actorName = [[[el querySelector:@".name"] textContent] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         element.actorImageURL = [el querySelectorAll:@"img"][1].attributes[@"src"];
+        element.detailURL = [el querySelector:@"a"].attributes[@"href"];
         [result addObject:element];
     }
     return result;

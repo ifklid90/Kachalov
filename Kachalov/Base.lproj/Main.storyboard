@@ -460,7 +460,7 @@
         <scene sceneID="IWJ-wk-mEY">
             <objects>
                 <tableViewController id="Rb8-Lk-FYg" userLabel="News List" customClass="NewsListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vkd-SX-kMx">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="155" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vkd-SX-kMx">
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -561,6 +561,76 @@
             </objects>
             <point key="canvasLocation" x="692" y="948"/>
         </scene>
+        <!--Actor Detail View Controller-->
+        <scene sceneID="Mfn-Qa-xcg">
+            <objects>
+                <viewController id="XvQ-hr-842" customClass="ActorDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5pK-Kb-Xiw"/>
+                        <viewControllerLayoutGuide type="bottom" id="NUS-1C-sf2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t5d-HF-se8">
+                        <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OwV-mG-iPA">
+                                <rect key="frame" x="8" y="243.5" width="584" height="243.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3X-fm-PsI">
+                                <rect key="frame" x="182" y="8" width="234" height="227.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OwV-mG-iPA" secondAttribute="trailing" constant="8" id="FtA-C7-B6F"/>
+                            <constraint firstItem="OwV-mG-iPA" firstAttribute="leading" secondItem="t5d-HF-se8" secondAttribute="leading" constant="8" id="HsV-g8-MTV"/>
+                            <constraint firstItem="OwV-mG-iPA" firstAttribute="top" secondItem="5pK-Kb-Xiw" secondAttribute="bottom" constant="8" id="KCd-mV-AdZ"/>
+                            <constraint firstItem="F3X-fm-PsI" firstAttribute="height" secondItem="t5d-HF-se8" secondAttribute="height" multiplier="0.5" constant="-16" id="LvO-Ys-1WZ"/>
+                            <constraint firstItem="F3X-fm-PsI" firstAttribute="leading" secondItem="t5d-HF-se8" secondAttribute="leading" constant="8" id="QyR-EM-ix2"/>
+                            <constraint firstItem="F3X-fm-PsI" firstAttribute="centerX" secondItem="t5d-HF-se8" secondAttribute="centerX" id="XqR-Gf-CES"/>
+                            <constraint firstItem="NUS-1C-sf2" firstAttribute="top" secondItem="OwV-mG-iPA" secondAttribute="bottom" id="iTt-hD-JGj"/>
+                            <constraint firstItem="F3X-fm-PsI" firstAttribute="top" secondItem="5pK-Kb-Xiw" secondAttribute="bottom" constant="8" id="jVz-Cb-dlD"/>
+                            <constraint firstItem="OwV-mG-iPA" firstAttribute="top" secondItem="F3X-fm-PsI" secondAttribute="bottom" constant="8" id="lcA-MS-ays"/>
+                            <constraint firstItem="OwV-mG-iPA" firstAttribute="leading" secondItem="F3X-fm-PsI" secondAttribute="trailing" constant="8" id="mgW-2b-wWf"/>
+                            <constraint firstItem="F3X-fm-PsI" firstAttribute="width" secondItem="t5d-HF-se8" secondAttribute="width" multiplier="0.33333" constant="-16" id="pZM-da-pyO"/>
+                            <constraint firstItem="NUS-1C-sf2" firstAttribute="top" secondItem="F3X-fm-PsI" secondAttribute="bottom" constant="8" id="tOq-p5-HQt"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="QyR-EM-ix2"/>
+                                <exclude reference="pZM-da-pyO"/>
+                                <exclude reference="tOq-p5-HQt"/>
+                                <exclude reference="KCd-mV-AdZ"/>
+                                <exclude reference="mgW-2b-wWf"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="LvO-Ys-1WZ"/>
+                                <include reference="QyR-EM-ix2"/>
+                                <exclude reference="XqR-Gf-CES"/>
+                                <include reference="pZM-da-pyO"/>
+                                <include reference="tOq-p5-HQt"/>
+                                <exclude reference="HsV-g8-MTV"/>
+                                <include reference="KCd-mV-AdZ"/>
+                                <exclude reference="lcA-MS-ays"/>
+                                <include reference="mgW-2b-wWf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="F3X-fm-PsI" id="9Ga-jT-2JZ"/>
+                        <outlet property="textView" destination="OwV-mG-iPA" id="lhx-aH-0UE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pcL-NW-r4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1518" y="1699.5"/>
+        </scene>
         <!--Troupe List-->
         <scene sceneID="OBi-1C-43j">
             <objects>
@@ -573,7 +643,7 @@
                         <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3mQ-1h-Zrq">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3mQ-1h-Zrq">
                                 <rect key="frame" x="0.0" y="28" width="600" height="459"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -622,6 +692,7 @@
                                         <connections>
                                             <outlet property="actorImageView" destination="V7L-Ud-5K8" id="FAM-NF-7M5"/>
                                             <outlet property="actorNameLabel" destination="dFl-m5-lBZ" id="Dbt-8M-Lmo"/>
+                                            <segue destination="XvQ-hr-842" kind="show" id="i9o-SW-piC"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LoadingCell" rowHeight="44" id="zye-bl-aFr" customClass="LoadingCell">
@@ -780,7 +851,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Y1-R0-jBo">
                                 <rect key="frame" x="0.0" y="28" width="392" height="459"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Нашему театру 225 лет. Это один из старейших театров России.
+                                <string key="text">Нашему театру 225 лет. Это один из старейших театров России.
 
         Казанский академический русский Большой драматический театр имени В.И.Качалова сегодня – это один из крупнейших театральных коллективов страны, являющийся центром русской театральной культуры в столице многонационального региона. Перешагнувший двухвековой рубеж, театр является примером успешной деятельности, востребованности у зрителей, известности в профессиональном сообществе.
 
@@ -834,7 +905,7 @@
                                                  «Нижегородские новости» 
 
                    "Приехал театр в самом деле удивительный. В основе эстетики казанского театра лежит явно ощущаемая карнавальная стихия. Но современный, зрелищный театральный язык, на котором говорит казанский театр, не заслоняет сокровенного смысла рассказываемых историй. В спонтанных обсуждениях после спектакля звучало напрочь забытое слово «катарсис». В этом как раз не было ничего удивительного, потому что происходило то, что и должно происходить при встрече с настоящим искусством". 
-                                                «Курс», Нижний Новгород   </mutableString>
+                                                «Курс», Нижний Новгород   </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="EngraversGothicBold" family="EngraversGothicBold" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

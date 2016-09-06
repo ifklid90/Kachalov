@@ -32,6 +32,9 @@
 		CEDC6F671D6E4211005A0D41 /* NewsShortCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F661D6E4211005A0D41 /* NewsShortCell.m */; };
 		CEDC6F6A1D6F38CF005A0D41 /* NewsListElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */; };
 		CEDC6F6D1D6F39AE005A0D41 /* NewsListParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */; };
+		CEE936BD1D797C3900919923 /* ActorDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE936BC1D797C3900919923 /* ActorDetailViewController.m */; };
+		CEE936C01D798A0100919923 /* ActorDetailElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE936BF1D798A0100919923 /* ActorDetailElement.m */; };
+		CEE936C31D798DB400919923 /* ActorDetailParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE936C21D798DB400919923 /* ActorDetailParser.m */; };
 		CEED5DAF1D14761000C94890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DAE1D14761000C94890 /* main.m */; };
 		CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEED5DB11D14761000C94890 /* AppDelegate.m */; };
 		CEED5DB81D14761000C94890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEED5DB61D14761000C94890 /* Main.storyboard */; };
@@ -87,6 +90,12 @@
 		CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListElement.m; path = Model/NewsListElement.m; sourceTree = "<group>"; };
 		CEDC6F6B1D6F39AE005A0D41 /* NewsListParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListParser.h; path = Model/NewsListParser.h; sourceTree = "<group>"; };
 		CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListParser.m; path = Model/NewsListParser.m; sourceTree = "<group>"; };
+		CEE936BB1D797C3900919923 /* ActorDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActorDetailViewController.h; path = ActorDetailVC/ActorDetailViewController.h; sourceTree = "<group>"; };
+		CEE936BC1D797C3900919923 /* ActorDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActorDetailViewController.m; path = ActorDetailVC/ActorDetailViewController.m; sourceTree = "<group>"; };
+		CEE936BE1D798A0100919923 /* ActorDetailElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActorDetailElement.h; path = Model/ActorDetailElement.h; sourceTree = "<group>"; };
+		CEE936BF1D798A0100919923 /* ActorDetailElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActorDetailElement.m; path = Model/ActorDetailElement.m; sourceTree = "<group>"; };
+		CEE936C11D798DB400919923 /* ActorDetailParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActorDetailParser.h; path = Model/ActorDetailParser.h; sourceTree = "<group>"; };
+		CEE936C21D798DB400919923 /* ActorDetailParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActorDetailParser.m; path = Model/ActorDetailParser.m; sourceTree = "<group>"; };
 		CEED5DAA1D14761000C94890 /* Kachalov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kachalov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEED5DAE1D14761000C94890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEED5DB01D14761000C94890 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +139,8 @@
 				CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */,
 				CE92B3131D73455D0090A239 /* ActorListElement.h */,
 				CE92B3141D73455D0090A239 /* ActorListElement.m */,
+				CEE936BE1D798A0100919923 /* ActorDetailElement.h */,
+				CEE936BF1D798A0100919923 /* ActorDetailElement.m */,
 			);
 			name = Entitys;
 			sourceTree = "<group>";
@@ -140,6 +151,7 @@
 				CE92B3191D7784880090A239 /* AboutTheaterVC */,
 				36EBC84570C51E8951878040 /* ViewController.h */,
 				36EBC425C50F8C6ECDD744E1 /* ViewController.m */,
+				CEE936BA1D797C1700919923 /* ActorDetailVC */,
 				CE92B30F1D722F070090A239 /* TroupeListVC */,
 				CEDC6F611D6E270F005A0D41 /* NewsListVC */,
 				CE7BEED01D67A99D0049E487 /* FullAfficheVC */,
@@ -160,6 +172,8 @@
 				CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */,
 				CE92B3161D734A620090A239 /* TroupeListParser.h */,
 				CE92B3171D734A620090A239 /* TroupeListParser.m */,
+				CEE936C11D798DB400919923 /* ActorDetailParser.h */,
+				CEE936C21D798DB400919923 /* ActorDetailParser.m */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -254,6 +268,15 @@
 				CEDC6F631D6E27CD005A0D41 /* NewsListTableViewController.m */,
 			);
 			name = NewsListVC;
+			sourceTree = "<group>";
+		};
+		CEE936BA1D797C1700919923 /* ActorDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				CEE936BB1D797C3900919923 /* ActorDetailViewController.h */,
+				CEE936BC1D797C3900919923 /* ActorDetailViewController.m */,
+			);
+			name = ActorDetailVC;
 			sourceTree = "<group>";
 		};
 		CEED5DA11D14761000C94890 = {
@@ -450,14 +473,17 @@
 				36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */,
 				CE92B31C1D7784FB0090A239 /* AboutTheaterViewController.m in Sources */,
 				36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */,
+				CEE936BD1D797C3900919923 /* ActorDetailViewController.m in Sources */,
 				CE92B3121D7344250090A239 /* ActorListCell.m in Sources */,
 				CEED5DCD1D242BEB00C94890 /* SmallAfficheTablewViewController.m in Sources */,
+				CEE936C31D798DB400919923 /* ActorDetailParser.m in Sources */,
 				CE92B3151D73455D0090A239 /* ActorListElement.m in Sources */,
 				CE99F1671D70DFF000A29CB6 /* LoadingCell.m in Sources */,
 				36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */,
 				36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */,
 				CE7BEED31D67AA1C0049E487 /* FullAfficheTableViewController.m in Sources */,
 				CE92B30E1D722EFE0090A239 /* TroupeListViewController.m in Sources */,
+				CEE936C01D798A0100919923 /* ActorDetailElement.m in Sources */,
 				CED1C2A71D635A5A0025BC9A /* ArrowButton.m in Sources */,
 				CEDC6F671D6E4211005A0D41 /* NewsShortCell.m in Sources */,
 			);

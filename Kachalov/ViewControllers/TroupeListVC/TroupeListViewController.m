@@ -12,6 +12,7 @@
 #import "ActorListElement.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "LoadingCell.h"
+#import "ActorDetailViewController.h"
 
 @interface TroupeListViewController ()
 
@@ -76,6 +77,7 @@
     ActorListElement *element = self.actorLists[self.sectionIdx][indexPath.row];
 
     cell.actorNameLabel.text = element.actorName;
+    cell.detailURL = element.detailURL;
     
     NSMutableString *URLstring = [NSMutableString stringWithString: @"http://www.teatrkachalov.ru"];
     [URLstring appendString:element.actorImageURL];
@@ -89,7 +91,6 @@
                              }];
         }
     }];
-    
     
     return cell;
 }
@@ -183,6 +184,7 @@
     [self.dataTask resume];
 }
 
+#pragma mark Navigation
 - (IBAction)navigationSegmentVelueChanged:(id)sender {
     UISegmentedControl *segmentControl = (UISegmentedControl *)sender;
     self.sectionIdx = [segmentControl selectedSegmentIndex];
@@ -191,6 +193,14 @@
     if ([self.actorLists[self.sectionIdx] count] == 0){
         [self loadActors];
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ActorDetailViewController *desinationVC =  segue.destinationViewController;
+    desinationVC.baseURL = self.URLs[self.sectionIdx];
+    ActorListCell *cell = (ActorListCell *)sender;
+    desinationVC.detailURL = cell.detailURL;
 }
 
 #pragma mark Activity Indicator

@@ -11,6 +11,7 @@
 @interface ActorListCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *actorImageView;
 @property (weak, nonatomic) IBOutlet UILabel *actorNameLabel;
+@property (nonatomic) NSString *detailURL;
 
 
 @end

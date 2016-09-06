@@ -15,6 +15,11 @@
     UIFont *navigationBarFont = [UIFont fontWithName:@"EngraversGothicBold" size:22.0];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : navigationBarFont}];
     
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    
+    UIFont *barButtonFont = [UIFont fontWithName:@"EngraversGothicBold" size:16.0];
+    [[UIBarButtonItem appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]] setTitleTextAttributes:@{NSFontAttributeName : barButtonFont} forState:UIControlStateNormal];
+    
     [[UITabBar appearance] setTintColor:[UIColor whiteColor]];
     
     UIFont *segmentControlFont = [UIFont fontWithName:@"EngraversGothicBold" size:16.0];
@@ -38,6 +43,9 @@
     [[UISegmentedControl appearance] setDividerImage:deviderImage2 forLeftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
     UIImage *deviderImage3 = [[UIImage imageNamed:@"SegmentViewDeviderLSRN.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(4.0, 1.0, 4.0, 1.0)];
     [[UISegmentedControl appearance] setDividerImage:deviderImage3 forLeftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    
+    [UITableViewCell appearance].selectionStyle = UITableViewCellSelectionStyleNone;
+    
 }
 
 @end
