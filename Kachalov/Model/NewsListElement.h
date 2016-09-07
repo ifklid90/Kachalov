@@ -15,5 +15,6 @@
 @property (nonatomic) NSString  *text;
 @property (nonatomic) NSString  *imageURL;
 @property (nonatomic) UIImage   *image;
+@property (nonatomic) NSString  *detailURL;
 
 @end

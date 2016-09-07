@@ -12,5 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *newsImage;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *newsTextLabel;
+@property (nonatomic) NSString *detailURL;
 
 @end

@@ -39,6 +39,7 @@
         NSString *text = [[el querySelector:@".text"] textContent];
         element.text = [text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
         element.imageURL = [el querySelectorAll:@"img"][1].attributes[@"src"];
+        element.detailURL = [el querySelector:@"a"].attributes[@"href"];
         [result addObject:element];
     }
     return result;

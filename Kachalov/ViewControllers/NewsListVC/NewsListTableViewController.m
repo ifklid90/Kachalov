@@ -12,6 +12,7 @@
 #import "NewsListElement.h"
 #import "LoadingCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
+#import "NewsDetailViewController.h"
 
 @interface NewsListTableViewController ()
 
@@ -112,6 +113,7 @@
     
     cell.dateLabel.text = element.date;
     cell.newsTextLabel.text = element.text;
+    cell.detailURL = element.detailURL;
     
     NSMutableString *URLstring = [NSMutableString stringWithString: @"http://www.teatrkachalov.ru"];
     [URLstring appendString:element.imageURL];
@@ -171,6 +173,15 @@
         }];
         [self.dataTask resume];
     }
+}
+
+#pragma mark Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NewsDetailViewController *destinationVC = (NewsDetailViewController *)segue.destinationViewController;
+    NewsShortCell *cell = (NewsShortCell *)sender;
+    destinationVC.detailURL = cell.detailURL;
 }
 
 #pragma mark Activity Indicator

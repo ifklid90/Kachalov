@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC425C50F8C6ECDD744E1 /* ViewController.m */; };
 		36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC6349703370454E22872 /* SmallAfficheParser.m */; };
 		36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */; };
 		36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */; };
 		91406474B5FE564AFE27F5CF /* libPods-Kachalov.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 093DBC56B29E40657E6C6A76 /* libPods-Kachalov.a */; };
+		CE0DE2E11D8029F100FA100D /* NewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0DE2E01D8029F100FA100D /* NewsDetailViewController.m */; };
+		CE0DE2E41D802C5800FA100D /* NewsDetailElement.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0DE2E31D802C5800FA100D /* NewsDetailElement.m */; };
+		CE0DE2E71D8037F600FA100D /* NewsDetailParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0DE2E61D8037F600FA100D /* NewsDetailParser.m */; };
 		CE5ED1171D6774E900E645ED /* AppearanceInstaller.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5ED1161D6774E900E645ED /* AppearanceInstaller.m */; };
 		CE753A3A1D69D3B900F2D4C5 /* SegmentViewBackgroundImageStateSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = CE753A391D69D3B900F2D4C5 /* SegmentViewBackgroundImageStateSelected.png */; };
 		CE753A3C1D69D9E000F2D4C5 /* SegmentViewDeviderLNRS.png in Resources */ = {isa = PBXBuildFile; fileRef = CE753A3B1D69D9E000F2D4C5 /* SegmentViewDeviderLNRS.png */; };
@@ -48,14 +50,18 @@
 		093DBC56B29E40657E6C6A76 /* libPods-Kachalov.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kachalov.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D68A140D4CF985C34FE84B /* Pods-Kachalov.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.debug.xcconfig"; sourceTree = "<group>"; };
 		36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SmallAfficheElement.m; path = Model/SmallAfficheElement.m; sourceTree = "<group>"; };
-		36EBC425C50F8C6ECDD744E1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		36EBC6349703370454E22872 /* SmallAfficheParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheParser.m; sourceTree = "<group>"; };
-		36EBC84570C51E8951878040 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		36EBC9B11C628CDBE95DD21F /* SmallAfficheCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallAfficheCell.h; sourceTree = "<group>"; };
 		36EBCD6D481A08A52CD3156E /* SmallAfficheParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallAfficheParser.h; sourceTree = "<group>"; };
 		36EBCED7674A36FEBBC80B6F /* SmallAfficheElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SmallAfficheElement.h; path = Model/SmallAfficheElement.h; sourceTree = "<group>"; };
 		36EBCF06365FE982056CF6A3 /* SmallAfficheCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallAfficheCell.m; sourceTree = "<group>"; };
 		45A7D839C51761F5FB4E1828 /* Pods-Kachalov.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kachalov.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kachalov/Pods-Kachalov.release.xcconfig"; sourceTree = "<group>"; };
+		CE0DE2DF1D8029F100FA100D /* NewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailViewController.h; path = NewsDetailVC/NewsDetailViewController.h; sourceTree = "<group>"; };
+		CE0DE2E01D8029F100FA100D /* NewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailViewController.m; path = NewsDetailVC/NewsDetailViewController.m; sourceTree = "<group>"; };
+		CE0DE2E21D802C5800FA100D /* NewsDetailElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailElement.h; path = Model/NewsDetailElement.h; sourceTree = "<group>"; };
+		CE0DE2E31D802C5800FA100D /* NewsDetailElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailElement.m; path = Model/NewsDetailElement.m; sourceTree = "<group>"; };
+		CE0DE2E51D8037F600FA100D /* NewsDetailParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsDetailParser.h; path = Model/NewsDetailParser.h; sourceTree = "<group>"; };
+		CE0DE2E61D8037F600FA100D /* NewsDetailParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsDetailParser.m; path = Model/NewsDetailParser.m; sourceTree = "<group>"; };
 		CE5ED1151D6774E900E645ED /* AppearanceInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppearanceInstaller.h; sourceTree = "<group>"; };
 		CE5ED1161D6774E900E645ED /* AppearanceInstaller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppearanceInstaller.m; sourceTree = "<group>"; };
 		CE753A391D69D3B900F2D4C5 /* SegmentViewBackgroundImageStateSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SegmentViewBackgroundImageStateSelected.png; sourceTree = "<group>"; };
@@ -133,14 +139,11 @@
 		36EBC7235AA256D28F53428F /* Entitys */ = {
 			isa = PBXGroup;
 			children = (
-				36EBCED7674A36FEBBC80B6F /* SmallAfficheElement.h */,
-				36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */,
-				CEDC6F681D6F38CF005A0D41 /* NewsListElement.h */,
-				CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */,
-				CE92B3131D73455D0090A239 /* ActorListElement.h */,
-				CE92B3141D73455D0090A239 /* ActorListElement.m */,
-				CEE936BE1D798A0100919923 /* ActorDetailElement.h */,
-				CEE936BF1D798A0100919923 /* ActorDetailElement.m */,
+				CE0DE2F21D80C6CF00FA100D /* ActorDetailElement */,
+				CE0DE2F11D80C6BC00FA100D /* ActorListElement */,
+				CE0DE2F01D80C67F00FA100D /* NewsListElement */,
+				CE0DE2EF1D80C66400FA100D /* SmallAfficheElement */,
+				CE0DE2EE1D80C65100FA100D /* NewsDetailElement */,
 			);
 			name = Entitys;
 			sourceTree = "<group>";
@@ -148,9 +151,8 @@
 		36EBC7DCF0DD08B6D39E12E4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE0DE2DE1D8029D300FA100D /* NewsDetailVC */,
 				CE92B3191D7784880090A239 /* AboutTheaterVC */,
-				36EBC84570C51E8951878040 /* ViewController.h */,
-				36EBC425C50F8C6ECDD744E1 /* ViewController.m */,
 				CEE936BA1D797C1700919923 /* ActorDetailVC */,
 				CE92B30F1D722F070090A239 /* TroupeListVC */,
 				CEDC6F611D6E270F005A0D41 /* NewsListVC */,
@@ -164,16 +166,12 @@
 		36EBC830B47D0264B267A3EA /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
-				36EBC6349703370454E22872 /* SmallAfficheParser.m */,
-				36EBCD6D481A08A52CD3156E /* SmallAfficheParser.h */,
-				CE7BEED41D67B0340049E487 /* FullAfficheParser.h */,
-				CE7BEED51D67B0340049E487 /* FullAfficheParser.m */,
-				CEDC6F6B1D6F39AE005A0D41 /* NewsListParser.h */,
-				CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */,
-				CE92B3161D734A620090A239 /* TroupeListParser.h */,
-				CE92B3171D734A620090A239 /* TroupeListParser.m */,
-				CEE936C11D798DB400919923 /* ActorDetailParser.h */,
-				CEE936C21D798DB400919923 /* ActorDetailParser.m */,
+				CE0DE2EB1D80C5C700FA100D /* TroupeListParser */,
+				CE0DE2EA1D80C5B400FA100D /* NewListParser */,
+				CE0DE2E91D80C5A100FA100D /* FullAfficheParser */,
+				CE0DE2E81D80C57500FA100D /* SmallAfficheParser */,
+				CE0DE2EC1D80C5D700FA100D /* ActorDetailParser */,
+				CE0DE2ED1D80C5EB00FA100D /* NewsDetailParser */,
 			);
 			name = Parsers;
 			sourceTree = "<group>";
@@ -208,6 +206,114 @@
 				45A7D839C51761F5FB4E1828 /* Pods-Kachalov.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE0DE2DE1D8029D300FA100D /* NewsDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				CE0DE2DF1D8029F100FA100D /* NewsDetailViewController.h */,
+				CE0DE2E01D8029F100FA100D /* NewsDetailViewController.m */,
+			);
+			name = NewsDetailVC;
+			sourceTree = "<group>";
+		};
+		CE0DE2E81D80C57500FA100D /* SmallAfficheParser */ = {
+			isa = PBXGroup;
+			children = (
+				36EBC6349703370454E22872 /* SmallAfficheParser.m */,
+				36EBCD6D481A08A52CD3156E /* SmallAfficheParser.h */,
+			);
+			name = SmallAfficheParser;
+			sourceTree = "<group>";
+		};
+		CE0DE2E91D80C5A100FA100D /* FullAfficheParser */ = {
+			isa = PBXGroup;
+			children = (
+				CE7BEED41D67B0340049E487 /* FullAfficheParser.h */,
+				CE7BEED51D67B0340049E487 /* FullAfficheParser.m */,
+			);
+			name = FullAfficheParser;
+			sourceTree = "<group>";
+		};
+		CE0DE2EA1D80C5B400FA100D /* NewListParser */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6F6B1D6F39AE005A0D41 /* NewsListParser.h */,
+				CEDC6F6C1D6F39AE005A0D41 /* NewsListParser.m */,
+			);
+			name = NewListParser;
+			sourceTree = "<group>";
+		};
+		CE0DE2EB1D80C5C700FA100D /* TroupeListParser */ = {
+			isa = PBXGroup;
+			children = (
+				CE92B3161D734A620090A239 /* TroupeListParser.h */,
+				CE92B3171D734A620090A239 /* TroupeListParser.m */,
+			);
+			name = TroupeListParser;
+			sourceTree = "<group>";
+		};
+		CE0DE2EC1D80C5D700FA100D /* ActorDetailParser */ = {
+			isa = PBXGroup;
+			children = (
+				CEE936C11D798DB400919923 /* ActorDetailParser.h */,
+				CEE936C21D798DB400919923 /* ActorDetailParser.m */,
+			);
+			name = ActorDetailParser;
+			sourceTree = "<group>";
+		};
+		CE0DE2ED1D80C5EB00FA100D /* NewsDetailParser */ = {
+			isa = PBXGroup;
+			children = (
+				CE0DE2E51D8037F600FA100D /* NewsDetailParser.h */,
+				CE0DE2E61D8037F600FA100D /* NewsDetailParser.m */,
+			);
+			name = NewsDetailParser;
+			sourceTree = "<group>";
+		};
+		CE0DE2EE1D80C65100FA100D /* NewsDetailElement */ = {
+			isa = PBXGroup;
+			children = (
+				CE0DE2E21D802C5800FA100D /* NewsDetailElement.h */,
+				CE0DE2E31D802C5800FA100D /* NewsDetailElement.m */,
+			);
+			name = NewsDetailElement;
+			sourceTree = "<group>";
+		};
+		CE0DE2EF1D80C66400FA100D /* SmallAfficheElement */ = {
+			isa = PBXGroup;
+			children = (
+				36EBCED7674A36FEBBC80B6F /* SmallAfficheElement.h */,
+				36EBC395A62F3434C60C99D0 /* SmallAfficheElement.m */,
+			);
+			name = SmallAfficheElement;
+			sourceTree = "<group>";
+		};
+		CE0DE2F01D80C67F00FA100D /* NewsListElement */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC6F681D6F38CF005A0D41 /* NewsListElement.h */,
+				CEDC6F691D6F38CF005A0D41 /* NewsListElement.m */,
+			);
+			name = NewsListElement;
+			sourceTree = "<group>";
+		};
+		CE0DE2F11D80C6BC00FA100D /* ActorListElement */ = {
+			isa = PBXGroup;
+			children = (
+				CE92B3131D73455D0090A239 /* ActorListElement.h */,
+				CE92B3141D73455D0090A239 /* ActorListElement.m */,
+			);
+			name = ActorListElement;
+			sourceTree = "<group>";
+		};
+		CE0DE2F21D80C6CF00FA100D /* ActorDetailElement */ = {
+			isa = PBXGroup;
+			children = (
+				CEE936BE1D798A0100919923 /* ActorDetailElement.h */,
+				CEE936BF1D798A0100919923 /* ActorDetailElement.m */,
+			);
+			name = ActorDetailElement;
 			sourceTree = "<group>";
 		};
 		CE7BEED01D67A99D0049E487 /* FullAfficheVC */ = {
@@ -300,9 +406,6 @@
 		CEED5DAC1D14761000C94890 /* Kachalov */ = {
 			isa = PBXGroup;
 			children = (
-				CED1C2A41D6359F60025BC9A /* Views */,
-				CE7FF0F81D401DBD00A1C1A3 /* Resources */,
-				CEED5DC71D1B358200C94890 /* Model */,
 				CEED5DB01D14761000C94890 /* AppDelegate.h */,
 				CEED5DB11D14761000C94890 /* AppDelegate.m */,
 				CEED5DB61D14761000C94890 /* Main.storyboard */,
@@ -310,8 +413,11 @@
 				CEED5DBE1D14761000C94890 /* LaunchScreen.storyboard */,
 				CEED5DC11D14761000C94890 /* Info.plist */,
 				CEED5DB91D14761000C94890 /* Kachalov.xcdatamodeld */,
-				CEED5DAD1D14761000C94890 /* Supporting Files */,
 				36EBC7DCF0DD08B6D39E12E4 /* ViewControllers */,
+				CEED5DC71D1B358200C94890 /* Model */,
+				CED1C2A41D6359F60025BC9A /* Views */,
+				CE7FF0F81D401DBD00A1C1A3 /* Resources */,
+				CEED5DAD1D14761000C94890 /* Supporting Files */,
 			);
 			path = Kachalov;
 			sourceTree = "<group>";
@@ -461,11 +567,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0DE2E41D802C5800FA100D /* NewsDetailElement.m in Sources */,
 				CEED5DB21D14761000C94890 /* AppDelegate.m in Sources */,
 				CE92B3181D734A620090A239 /* TroupeListParser.m in Sources */,
 				CEDC6F6D1D6F39AE005A0D41 /* NewsListParser.m in Sources */,
 				CEDC6F641D6E27CD005A0D41 /* NewsListTableViewController.m in Sources */,
 				CEED5DBB1D14761000C94890 /* Kachalov.xcdatamodeld in Sources */,
+				CE0DE2E71D8037F600FA100D /* NewsDetailParser.m in Sources */,
 				CEDC6F6A1D6F38CF005A0D41 /* NewsListElement.m in Sources */,
 				CE5ED1171D6774E900E645ED /* AppearanceInstaller.m in Sources */,
 				CEED5DAF1D14761000C94890 /* main.m in Sources */,
@@ -473,13 +581,13 @@
 				36EBC8F95FEECC3087B08D11 /* SmallAfficheElement.m in Sources */,
 				CE92B31C1D7784FB0090A239 /* AboutTheaterViewController.m in Sources */,
 				36EBC501800B025E1E311F26 /* SmallAfficheParser.m in Sources */,
+				CE0DE2E11D8029F100FA100D /* NewsDetailViewController.m in Sources */,
 				CEE936BD1D797C3900919923 /* ActorDetailViewController.m in Sources */,
 				CE92B3121D7344250090A239 /* ActorListCell.m in Sources */,
 				CEED5DCD1D242BEB00C94890 /* SmallAfficheTablewViewController.m in Sources */,
 				CEE936C31D798DB400919923 /* ActorDetailParser.m in Sources */,
 				CE92B3151D73455D0090A239 /* ActorListElement.m in Sources */,
 				CE99F1671D70DFF000A29CB6 /* LoadingCell.m in Sources */,
-				36EBC3D9E5FCED138C60A505 /* ViewController.m in Sources */,
 				36EBCDFD94A0DB2D1A7A33A5 /* SmallAfficheCell.m in Sources */,
 				CE7BEED31D67AA1C0049E487 /* FullAfficheTableViewController.m in Sources */,
 				CE92B30E1D722EFE0090A239 /* TroupeListViewController.m in Sources */,

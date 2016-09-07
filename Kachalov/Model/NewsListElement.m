@@ -11,9 +11,10 @@
 @implementation NewsListElement
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"\ndate = %@;\ntext = %@;\nimageURL = %@\n",
+    return [NSString stringWithFormat:@"\ndate = %@;\ntext = %@;\nimageURL = %@;\ndetailURL = %@",
             self.date,
             self.text,
-            self.imageURL];
+            self.imageURL,
+            self.detailURL];
 }
 @end
